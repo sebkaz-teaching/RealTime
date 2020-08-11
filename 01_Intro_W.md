@@ -1,35 +1,55 @@
 ---
 layout: page
-title: 01 -- Czego będziemy się uczyć ?
+title: 01 -- Offline/Online Learning 
 mathjax: true
 ---
 
-# Wszędzie dane
+# Dane
 
-Rozwój technologii generowania, gromadzenia i przetwarzania danych oraz upowszechnienie systemów komputerowych (spadek cen i wzrost świadomości użytkowników) oznacza olbrzymi wolumen danych do przechowywania. Narzędziami cyfrowego generowania danych są między innymi kody kreskowe, karty płatnicze, aparaty cyfrowe, email, sieci RFID, edytory tekstu itp.
+Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są *ustrukturyzowane* jak i *nieustrukturyzowane* dane.
+ Spowodowały one wyprodukowanie tysięcy nowych narzędzi do generowania, zbierania, przechowywania i przetwarzania informacji na niespotykaną dotąd skalę.
 
-**Raporty o danych:**
+Pojawiające się nowe wyzwania naukowe jak i biznesowe takie jak:
 
-- W 2011 powstało $1.8$ zettabajtów danych (12 miliardów dwugodzinnych filmów HD).
-- firma IDC Digital Universe przeprowadziła badania *Extracting Value from Chaos*  gdzie odnotowano wzrost cyfrowych danych ponad dwukrotnie co dwa lata (szybciej niż prawo Moore'a).
-- $400 000$ TB emaili rocznie (biblioteka kongeru USA to $\sim 10$ TB - 30 mln książek)
-- $\sim 40\%$ wszystkich danych na świecie pochodzi z USA
-- Serwis Google przetwarza ponad 20 petabajtów danych dziennie
-- $90\%$ wszystkich danych powstało w ostatnich dwóch latach. 
+- inteligentna reklama tysięcy produktów dla milionów klientów,
+- przetwarzanie danych o genach, RNA czy też białkach [genus](http://genus.fuw.edu.pl),
+-inteligentne wykrywanie różnorodnych sposobów nadużyć wśródsetek miliardów transakcji kart kredytowych,
+- symulacje giełdowe oparte o tysiące instrumentów finansowych,
+- rozpoznawanie miliardów przypadków efektów zderzeń protonówi produkcji cząstek elementarnych w LHC 
 
-## Gdzie zostawiasz najwięcej informacji o sobie ?
+stają się możliwe do realizacji dzięki budowie systemów opartych naotwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania tak ogromnych ilościdanych.
 
-Mechanizm wyszukiwania Google każdego dnia przetwarza setki milionów zapytań. Każde takie zapytanie reprezentuję jedną transakcję gdzie użytkownik wskazuje jakich informacji potrzebuje. Jak myślisz ? jaką nową i użyteczną wiedzę można nabyć analizując tak ogromny zbiór zapytań ?
+Dziś systemy takie jak SAS, Apache Hadoop, Apache Spark czy Microsoft Azure używane są na szeroką skalę w wielu instytucjach i firmach niemal w każdej dziedzinie gospodarki. 
+Epoka „wielkich danych” stawiaprzed nami coraz to nowsze wyzwania związane nie tylko z ilością, ale i z czasem przetwarzania danych.
 
+W ramach badań nad algorytmami i sztuczną inteligencją (ang. _Artificial Inteligence_ AI) pojawiły się nowe gałęzie badań, które dziś możemy określić jako **machine learning** (ML) oraz **deep learning**(DL).
+Dzięki nim powstała możliwość pozyskiwania wiedzy bezpośrenio z informacji zawartych w danych oraz tworzenia na tej podstawie przewidywania zachowywania się badanego układu. 
+Dzięki ML i DL nie trzeba już zatrudniać setki ludzi do ręcznego wyznaczania regół czy tworzenia modeli.
+Omawiane dziedziny oferują efektywniejsze rozwiązanie polegające na stopniowym poprawianiu skuteczności modeli predykcyjnych oraz podejmowaniu decyzji na podstawie analizowanych danych. 
+Mają one zastosowanie w takich dziedzinach jak:
+
+- zaawansowane filtry antyspamowe,
+- rozpoznawanie mowy i tekstu,
+- silniki wyszukiwarek internetowych
+- rekomendacje produktów
+- pojazdy autonomiczne
+- next best action
+- gry
+- kampanie marketingowe
+- ...
 
 
 ### Główne źródła danych
 
-- Działalność przedsiębiorstw i instytucji (banki, ubezpieczalnie, sieci handlowe, urzędy ...). Sieć sprzedaży Wal-Mart gromadzi dziennie dane dotyczące 20 milionów trnasakcji. AT&T obsługuje miliardy połączeń dziennie. Danych jest tyle, że nie zapisuje się ich a analizy prowadzone są 'on the fly'.
-- Ośrodki naukowe: $10^9$ rekordów danych astronomicznych, $10^2 \sim 10^3$ atrybutów w systemach diagnozy medycznej. Very Long Baseline Interferometry posiada 16 teleskopów, gdzie każdy produkuje 1 Gigabit/sec danych astronomicznych w czasie 25 dniowej sesji obserwacyjnej.
+- Działalność przedsiębiorstw i instytucji (banki, ubezpieczalnie, sieci handlowe, urzędy ...). 
+AT&T obsługuje miliardy połączeń dziennie. 
+Danych jest tyle, że nie zapisuje się ich a analizy prowadzone są `on the fly`.
+- Ośrodki naukowe: $10^9$ rekordów danych astronomicznych, $10^2 \sim 10^3$ atrybutów w systemach diagnozy medycznej. 
+Very Long Baseline Interferometry posiada 16 teleskopów, gdzie każdy produkuje 1 Gigabit/sec danych astronomicznych w czasie 25 dniowej sesji obserwacyjnej.
 - Baza danych [BrainMaps](http://brainmaps.org) zawiera ponad 50 TB danych z mapami mózgów ssaków.
+- Systemy monitorujące pracę urządzeń
+- 
 
-Wiele firm i przedsiębiorstw, instytucji oraz ośrodków naukowych dysponuje bazami i hurtowniami danych o rozmiarach $20-30$ TB.
 
 ## WWW jako źródło danych
 
@@ -61,7 +81,7 @@ Większość danych przechowywana jest w bazach lub hurtowniach danych. Stand
 
 Model ten dostarcza efektywnych rozwiązań do:
 
-- efektywne i bezpieczne przeowywanie danych,
+- efektywne i bezpieczne przechowywanie danych,
 - transakcyjne odtwarzanie danych po awarii,
 - optymalizacja dostępu do danych,
 - zarządzanie współbierznością,
@@ -80,6 +100,7 @@ Badania nad tego typu zagadnieniami doprowadziły do sformułowania nowego model
 ### OLAP
 
 **Przetwarzanie analityczne on-line OLAP (on-line analytic processing).**
+
  Wspieranie procesów analizy i dostarczanie narzędzi umożliwiających analizę wielowymiarową (czas, miejsce, produkt).
 
  Analiza danych z hurtowni to przede wszystkim obliczanie **agregatów** (podsumowań) dotyczących wymiarów hurtowni. Proces ten jest całkowicie sterowany przez użytkownika.
@@ -104,11 +125,9 @@ OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. Uz�
 - Brak możliwości formułowania bardziej ogólnych zapytań, np. Jakie czynniki kształtują popyt? czym różnią się klienci w sklepie A od klientów w sklepie B? jakie produkty kupowane są wraz z piwem ? czy można przewidzieć popyt na określone produkty ? jakie są ogólne korelacje sprzedaży ze względu na lokalizacje i asortyment ? ...
 - Brak automatyzacji procesu analizy oraz ograniczony zakres analizy.
 
-### Rozwiązanie ?
+### Dalsze rozwiązania ?
 
-# EKSPLORACJA DANYCH (Data Mining)
-
-## Data Mining Definicja pojęć
+# Eksploracja Danych (Data Mining)
 
 ## Definicja 1
 
@@ -135,66 +154,33 @@ Modelami mogą być:
 
 Rola badacz DM - jak znaleźć informacje, których wzorce są nieznane i mogą być użyteczne ?
 
-# Zakres wiedzy analityka danych
 
-Analiza danych to proces w którym dane zostają uszeregowane i przeorganizowane tak by dzięki różnym metodom wyjaśnić przeszłość i przewidzieć przyszłość (Fizyka ?)
-To nauka o zadawaniu pytań, odkrywaniu wyjaśnienia i stawiania hipotez. Miesza ze sobą takie dziedziny jak:
-
-![Umiejetnosci](/img/rys1.png).
-
-[Jak działa Data Science](https://www.youtube.com/watch?v=tKa0zDDDaQk).
-
-[Jak uczyć się Data Science](https://www.youtube.com/watch?v=Ura_ioOcpQI).
-
-[Kurs Machine Learning - Andrew Ng, Stanford](https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN)
-
-## Matematyka
-
-Algebra liniowa - wektory, macierze, pochodne, wartości i wektory własne, metody numeryczne, prawdopodobieństwo.
-
-## Statystyka
-
-Metody zbierania, analizy i interpretacji danych.
-
-## Computer Science
-
-Nauka tworzenia narzędzi do analizy danych. Potrzebna wiedza dotyczy: _programowania_, _zarządzania bazami dancyh_, _zarządzanie sieciami_, _systemy dyskowe_, _high-performance computing (Python)_.
-
-## Artificial intelligence (AI)
-
-Algorytmy symulujące proces uczenia się maszyn.
-
-## Machine Learning
-
-Uczenie komputerowych algorytmów.
-
-## Wizualizacja danych
-
-Dobra prezentacja danych pozwala szybko odczytać ważne informacje
-
-## Wiedza ekspercka
-
-Znajomość analizowanej dziedziny: finanse, administracja, biznes, nauka itp.
-
-Realizacja zadań nauki o danych wymaga wielu specjalistów.
-
-# Co po eksploracji danych ? 
-
-## Uczenie maszynowe (Machine Learning)
+# Uczenie maszynowe (Machine Learning)
 
 Za pomocą ML identyfikujemy procesy, dzięki którym zdobywamy wiedzę nie zawsze możliwą do bezpośredniego wnioskowania z danych, a jednocześnie przydatną do podejmowania decyzji. Jest narzędziem stosowanym do wieloskalowego przetwarzania danych i świetnie nadaje się do obsługi złożonych zbiorów danych. Zdolność predykcji modeli ML wykorzystuje się bardzo często do systemów sztucznej inteligencji (**AI**).
 
 1. Uczenie nadzorowane (_supervised_)
+
+- Klasyfikacja
+- Regresja dla przewidywania wyników ciągłych 
+
 2. Uczenie nienadzorowane (_unsupervised_)
+
+- Wyznaczanie podzbiorów za pomocą grupowania
+- Redukowanie wymiarowości w celu kompresji danych
+
 3. Uczenie przez wzmocnienie (_reinforcement learning_)
 
 W pythonie uczeniu maszynowemu poświęcony jest pakiet _scikit-learn_. 
+
 
 ### Algorytmy
 
 - regresja liniowa
 - regresja logistyczna
 - drzewa decyzyjne
+- lasy losowe
+- XGB
 - k-średnie
 - naiwny Bayes
 - ...
@@ -203,16 +189,11 @@ W pythonie uczeniu maszynowemu poświęcony jest pakiet _scikit-learn_.
 
 Perceprton jako jednowarstwowa sieć w przód.
 
->> Zadanie 1
->> Kiedy powstała pierwsza sieć neuronowa (Perceptron) ?
 
->> Zadanie 2
->> Przypomnij sobie własności iloczynu skalarnego
-
-## Deep learning
+# Deep learning
 
 
-# Zastosowania praktyczne 
+## Zastosowania praktyczne 
 
 1. _AlphaGo_ to maszyna ze sztuczną intelignecją bazującą na uczeniu głębokim, która w 2016 roku pokonała mistrza w grze Go (Lee Sedol).
 
@@ -227,4 +208,18 @@ Perceprton jako jednowarstwowa sieć w przód.
 6. 2016 - Przyśpieszenie procesu zarządzania reklamacjami
 
 7. inne - pojazdy bezzałogowe, system rozpoznawania celów, systemy czytające notatki lekarskie, systemy wykrywania twarzy
+
+
+# Implementacja algorytmów uczenia maszynowego w celach klasyfikacji
+
+Wszystkie programy i kody będziemy pisać w języku python. 
+
+1. Obiektowe programowanie w pythonie
+2. Wdrożenie modelu z wykorzystaniem biblioteki Flask
+3. Docker jako narzędzie kontyneryzacji aplikacji 
+
+
+[Docker z jupyter notebookiem](https://hub.docker.com/repository/docker/sebkaz/docker-data-science)
+
+[Pobierz notatnik](notebooks/cw1.ipynb)
 

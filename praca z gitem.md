@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Praca z systemem git
+title: Praca z systemem Docker
 ---
 
 # Zacznij korzystać z serwisu GitHub
