@@ -7,9 +7,9 @@ mathjax: true
 # Dane
 
 Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są *ustrukturyzowane* jak i *nieustrukturyzowane* dane.
- Spowodowały one wyprodukowanie tysięcy nowych narzędzi do generowania, zbierania, przechowywania i przetwarzania informacji na niespotykaną dotąd skalę.
+Spowodowały one wyprodukowanie tysięcy nowych narzędzi do generowania, zbierania, przechowywania i przetwarzania informacji na niespotykaną dotąd skalę.
 
-Pojawiające się nowe wyzwania naukowe jak i biznesowe takie jak:
+Nowe wyzwania naukowe i biznesowe takie jak:
 
 - inteligentna reklama tysięcy produktów dla milionów klientów,
 - przetwarzanie danych o genach, RNA czy też białkach [genus](http://genus.fuw.edu.pl),
@@ -17,10 +17,10 @@ Pojawiające się nowe wyzwania naukowe jak i biznesowe takie jak:
 - symulacje giełdowe oparte o tysiące instrumentów finansowych,
 - rozpoznawanie miliardów przypadków efektów zderzeń protonówi produkcji cząstek elementarnych w LHC 
 
-stają się możliwe do realizacji dzięki budowie systemów opartych naotwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania tak ogromnych ilościdanych.
+stają się możliwe do realizacji dzięki budowie systemów opartych naotwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania ogromnych ilości danych.
 
 Dziś systemy takie jak SAS, Apache Hadoop, Apache Spark czy Microsoft Azure używane są na szeroką skalę w wielu instytucjach i firmach niemal w każdej dziedzinie gospodarki. 
-Epoka „wielkich danych” stawiaprzed nami coraz to nowsze wyzwania związane nie tylko z ilością, ale i z czasem przetwarzania danych.
+Epoka „wielkich danych” stawia przed nami coraz to nowsze wyzwania związane nie tylko z ilością, ale i z czasem przetwarzania danych.
 
 W ramach badań nad algorytmami i sztuczną inteligencją (ang. _Artificial Inteligence_ AI) pojawiły się nowe gałęzie badań, które dziś możemy określić jako **machine learning** (ML) oraz **deep learning**(DL).
 Dzięki nim powstała możliwość pozyskiwania wiedzy bezpośrenio z informacji zawartych w danych oraz tworzenia na tej podstawie przewidywania zachowywania się badanego układu. 
@@ -48,14 +48,16 @@ Danych jest tyle, że nie zapisuje się ich a analizy prowadzone są `on the fly
 Very Long Baseline Interferometry posiada 16 teleskopów, gdzie każdy produkuje 1 Gigabit/sec danych astronomicznych w czasie 25 dniowej sesji obserwacyjnej.
 - Baza danych [BrainMaps](http://brainmaps.org) zawiera ponad 50 TB danych z mapami mózgów ssaków.
 - Systemy monitorujące pracę urządzeń
-- 
 
 
 ## WWW jako źródło danych
 
-Jednym z największych źródeł danych jest obecnie **sieć WEB** zawierająca ponad 40 miliardów zaindeksowanych stron wg. [WorldWideWebSize.com](http://www.worldwidewebsize.com). Rok temu **at least 4.49 billion pages** (Friday, 16 February, 2018). Obecnie **at least 5.55 billion pages** (Thursday, 14 February, 2019).
+Jednym z największych źródeł danych jest obecnie **sieć WEB**
+[WorldWideWebSize.com](http://www.worldwidewebsize.com). 
+Rok temu **at least 5.55 billion pages** (Thursday, 14 February, 2019). 
+Obecnie **at least 5.72 billion pages** (Friday, 14 August, 2020).
 
-### W  jakim celu przechowuje się tak olbrzymie wolumeny danych ?
+### W jakim celu przechowuje się tak olbrzymie wolumeny danych ?
 
 Niewielka część gromadzonych danych analizowanych jest w praktyce !!!
 
@@ -73,11 +75,14 @@ Czy można wykorzystać dane transakcyjne aby zwiększyć sprzedaż i popraw
 
 ## Modele przetwarzania danych
 
-Większość danych przechowywana jest w bazach lub hurtowniach danych. Standardowo dostęp do danych sprowadza się najczęściej do realizacji zapytań poprzez aplikacje. Sposób wykorzystania i realizacji procesu dostępu do bazy danych nazywamy **modelem przetwarzania**.
+Większość danych przechowywana jest w bazach lub hurtowniach danych.
+Standardowo dostęp do danych sprowadza się najczęściej do realizacji zapytań poprzez aplikacje. 
+Sposób wykorzystania i realizacji procesu dostępu do bazy danych nazywamy **modelem przetwarzania**.
 
 ### Model Tradycyjny
 
-**Model tradycyjny** - przetwarzanie transakcyjne w trybie on-line, OLTP (on-line transaction processing). Świetnie sprawdza się  w przypadku obsługi bieżącej np. obsługa klienta, rejestr zamówień, obsługa sprzedaży itp. 
+**Model tradycyjny** - przetwarzanie transakcyjne w trybie on-line, OLTP (on-line transaction processing). 
+Świetnie sprawdza się w przypadku obsługi bieżącej np. obsługa klienta, rejestr zamówień, obsługa sprzedaży itp. 
 
 Model ten dostarcza efektywnych rozwiązań do:
 
@@ -103,26 +108,34 @@ Badania nad tego typu zagadnieniami doprowadziły do sformułowania nowego model
 
  Wspieranie procesów analizy i dostarczanie narzędzi umożliwiających analizę wielowymiarową (czas, miejsce, produkt).
 
- Analiza danych z hurtowni to przede wszystkim obliczanie **agregatów** (podsumowań) dotyczących wymiarów hurtowni. Proces ten jest całkowicie sterowany przez użytkownika.
+ Analiza danych z hurtowni to przede wszystkim obliczanie **agregatów** (podsumowań) dotyczących wymiarów hurtowni. 
+ Proces ten jest całkowicie sterowany przez użytkownika.
 
 **Przykład**
 
-Załóżmy, że mamy dostęp do hurtowni danych gdzie przechowywane są informacje dotyczące sprzedaży produktów w supermarkecie. Jak przeanalizować zapytania:
+Załóżmy, że mamy dostęp do hurtowni danych gdzie przechowywane są informacje dotyczące sprzedaży produktów w supermarkecie. 
+Jak przeanalizować zapytania:
 
 1. Jaka jest łączna sprzedaż produktów w kolejnych kwartałach, miesiącach, tygodniach ?
 2. Jaka jest sprzedaż produktów z podziałem na rodzaje produktów ?
 3. Jaka jest sprzedaż produktów z podziałem na oddziały supermarketu ?
 
-Odpowiedzi na te pytania pozwalają określić „wąskie gardła” sprzedaży produktów przynoszących deficyt, zaplanować zapasy w magazynach czy porównać sprzedaż różnych grup w różnych oddziałach supermarketu.
+Odpowiedzi na te pytania pozwalają określić `wąskie gardła` sprzedaży produktów przynoszących deficyt, zaplanować zapasy w magazynach czy porównać sprzedaż różnych grup w różnych oddziałach supermarketu.
 
 ## OLAP $\to$ Data Mining
 
-OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. Użytkownik formułuje zapytania i dokonuje analizy. Rozszerzenie standardu języka dostępu do baz danych SQL o możliwość efektywnego przetwarzania złożonych zapytań zawierających agregaty.
+OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. 
+Użytkownik formułuje zapytania i dokonuje analizy. 
+Rozszerzenie standardu języka dostępu do baz danych SQL o możliwość efektywnego przetwarzania złożonych zapytań zawierających agregaty.
 
 ### Wady OLAP
 
 - Oferowanie zbyt szczegółowego poziomu abstrakcji
-- Brak możliwości formułowania bardziej ogólnych zapytań, np. Jakie czynniki kształtują popyt? czym różnią się klienci w sklepie A od klientów w sklepie B? jakie produkty kupowane są wraz z piwem ? czy można przewidzieć popyt na określone produkty ? jakie są ogólne korelacje sprzedaży ze względu na lokalizacje i asortyment ? ...
+- Brak możliwości formułowania bardziej ogólnych zapytań, np. Jakie czynniki kształtują popyt? 
+czym różnią się klienci w sklepie A od klientów w sklepie B?
+jakie produkty kupowane są wraz z piwem ? 
+czy można przewidzieć popyt na określone produkty ? 
+jakie są ogólne korelacje sprzedaży ze względu na lokalizacje i asortyment ? ...
 - Brak automatyzacji procesu analizy oraz ograniczony zakres analizy.
 
 ### Dalsze rozwiązania ?
@@ -137,11 +150,11 @@ OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. Uz�
 
 > Eksploracja danych jest między dyscyplinarną dziedziną, łącząca techniki uczenia maszynowego, rozpoznawania wzorców, statystyki, bez danych i wizualizacji w celu uzyskiwania informacji z dużych baz danych.
 
-Wszystkie definicje wskazują, iż celem eksploracji danych jest odkrywanie zależności które nie były wcześniej znane odbiorcy.
+Wszystkie definicje wskazują, iż celem eksploracji danych jest odkrywanie zależności, które nie były wcześniej znane odbiorcy.
 
 **W wyniku realizacji procesu eksploracji danych otrzymujemy:**
 
-## MODEL lub WZORZEC
+## MODEL
 
 Modelami mogą być:
 
@@ -157,7 +170,9 @@ Rola badacz DM - jak znaleźć informacje, których wzorce są nieznane i mogą 
 
 # Uczenie maszynowe (Machine Learning)
 
-Za pomocą ML identyfikujemy procesy, dzięki którym zdobywamy wiedzę nie zawsze możliwą do bezpośredniego wnioskowania z danych, a jednocześnie przydatną do podejmowania decyzji. Jest narzędziem stosowanym do wieloskalowego przetwarzania danych i świetnie nadaje się do obsługi złożonych zbiorów danych. Zdolność predykcji modeli ML wykorzystuje się bardzo często do systemów sztucznej inteligencji (**AI**).
+Za pomocą ML identyfikujemy procesy, dzięki którym zdobywamy wiedzę nie zawsze możliwą do bezpośredniego wnioskowania z danych, a jednocześnie przydatną do podejmowania decyzji. 
+Jest narzędziem stosowanym do wieloskalowego przetwarzania danych i świetnie nadaje się do obsługi złożonych zbiorów danych. 
+Zdolność predykcji modeli ML wykorzystuje się bardzo często do systemów sztucznej inteligencji (**AI**).
 
 1. Uczenie nadzorowane (_supervised_)
 

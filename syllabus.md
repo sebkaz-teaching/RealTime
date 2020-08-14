@@ -17,7 +17,7 @@ title: Syllabus
 >
 > Poniedziałek (08:00 - 9:30 wykład, 09:45 - 11:15 ćwiczenia)
 
-**Prowadzący:** [Sebastian Zając](https://sebastianzajac.pl),
+**Prowadzący:** [Sebastian Zając](https://sebastianzajac.pl), 
   [sebastian.zajac@sgh.waw.pl](mailto:sebastian.zajac@sgh.waw.pl)
 
 
@@ -28,7 +28,10 @@ title: Syllabus
 
 ## Cel Przedmiotu
 
-Podejmowanie prawidłowych decyzji na podstawie danych i ich analiz w biznesie to proces i codzienność. Nowoczesne metody modelowania przez uczenie maszynowe (ang. machine learning), sztuczną inteligencję (AI), bądź głębokie sieci neuronowe (ang. deep learning) pozwalają nie tylko na lepsze rozumienie biznesu, ale i wspomagają podejmowanie kluczowych dla niego decyzji. Rozwój technologii oraz coraz to nowsze koncepcje biznesowe pracy bezpośrednio z klientem wymagają nie tylko prawidłowych, ale i odpowiednio szybkich decyzji. Oferowane zajęcia mają na celu przekazanie studentom doświadczenia oraz kompleksowej wiedzy teoretycznej w zakresie przetwarzania i analizy danych w czasie rzeczywistym oraz zaprezentowanie najnowszych technologii informatycznych (darmowych oraz komercyjnych) służących do przetwarzania danych ustrukturyzowanych (pochodzących np. z hurtowni danych) jak i nieustrukturyzowanych (np. obrazy, dźwięk, strumieniowanie video) w trybie on-line. W toku zajęć przedstawiona zatem zostanie filozofia analizy dużych danych w czasie rzeczywistym jako część koncepcji Big Data w połączeniu ze strumieniowaniem danych, programowaniem strumieniowym w języku Python, R oraz SAS. Zostanie przedstawiona tzw. struktury lambda oraz kappa służące do przetwarzania danych w data lake wraz z omówieniem problemów i trudności jakie spotyka się w realizacji modelowania w czasie rzeczywistym dla dużej ilości danych. Wiedza teoretyczna zdobywana będzie (oprócz części wykładowej) poprzez realizację przypadków testowych w narzędziach takich jak Apache Spark, Nifi, Microsoft Azure, czy SAS. Na zajęciach laboratoryjnych studenci korzystać będą z pełni skonfigurowanych środowisk programistycznych przygotowanych do przetwarzania, modelowania i analizy danych. Tak aby oprócz umiejętności i znajomości technik analitycznych studenci poznali i zrozumieli najnowsze technologie informatyczne związane z przetwarzaniem danych w czasie rzeczywistym.
+Podejmowanie prawidłowych decyzji na podstawie danych i ich analiz w biznesie to proces i codzienność. 
+Nowoczesne metody modelowania przez uczenie maszynowe (ang. machine learning), sztuczną inteligencję (AI), bądź głębokie sieci neuronowe (ang. deep learning) pozwalają nie tylko na lepsze rozumienie biznesu, ale i wspomagają podejmowanie kluczowych dla niego decyzji. 
+Rozwój technologii oraz coraz to nowsze koncepcje biznesowe pracy bezpośrednio z klientem wymagają nie tylko prawidłowych, ale i odpowiednio szybkich decyzji. 
+Oferowane zajęcia mają na celu przekazanie studentom doświadczenia oraz kompleksowej wiedzy teoretycznej w zakresie przetwarzania i analizy danych w czasie rzeczywistym oraz zaprezentowanie najnowszych technologii informatycznych (darmowych oraz komercyjnych) służących do przetwarzania danych ustrukturyzowanych (pochodzących np. z hurtowni danych) jak i nieustrukturyzowanych (np. obrazy, dźwięk, strumieniowanie video) w trybie on-line. W toku zajęć przedstawiona zatem zostanie filozofia analizy dużych danych w czasie rzeczywistym jako część koncepcji Big Data w połączeniu ze strumieniowaniem danych, programowaniem strumieniowym w języku Python, R oraz SAS. Zostanie przedstawiona tzw. struktury lambda oraz kappa służące do przetwarzania danych w data lake wraz z omówieniem problemów i trudności jakie spotyka się w realizacji modelowania w czasie rzeczywistym dla dużej ilości danych. Wiedza teoretyczna zdobywana będzie (oprócz części wykładowej) poprzez realizację przypadków testowych w narzędziach takich jak Apache Spark, Nifi, Microsoft Azure, czy SAS. Na zajęciach laboratoryjnych studenci korzystać będą z pełni skonfigurowanych środowisk programistycznych przygotowanych do przetwarzania, modelowania i analizy danych. Tak aby oprócz umiejętności i znajomości technik analitycznych studenci poznali i zrozumieli najnowsze technologie informatyczne związane z przetwarzaniem danych w czasie rzeczywistym.
 
 ## Program przedmiotu
 
@@ -119,7 +122,6 @@ Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, 
 modelowania, nowych technologii informatycznych z wykorzystaniem analizy w czasie rzeczywistym. Powiązania: (Analiza danych - Big Data)K2A_K02, (Analiza danych - Big Data)K2A_K04, (OGL)O2_K01, (OGL) O2_K02, (OGL)O2_K05, (OGL)O2_K06
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
-
 
 
 

@@ -1,7 +1,4 @@
----
-layout: page
-title: 02 -- Instalacja oprogramowania
----
+
 
 # Git - system kontroli wersji
 

@@ -1,8 +1,4 @@
----
-layout: page
-title: 07 -- Statystyki opisowe
-mathjax: true
----
+
 
 
 ## Iris data
