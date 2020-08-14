@@ -47,3 +47,4 @@ docker stop <CONTAINER ID>
 docker rm --force <CONTAINER ID>
 ```
 
+Polecam również [krótkie intro](https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98)
