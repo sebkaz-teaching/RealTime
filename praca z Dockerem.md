@@ -17,7 +17,6 @@ Jeżli wszystko zainstalowało się prawidłowo wykonaj następujące polecenia:
 docker --version
 ```
 
-
 2. Ściągnij i uruchom obraz `Hello World` i 
 
 ```{bash}

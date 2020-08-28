@@ -6,7 +6,10 @@ mathjax: true
 
 # Dane
 
-Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są *ustrukturyzowane* jak i *nieustrukturyzowane* dane.
+<img src="/img/main.jpeg" alt="Paris"  width="460" height="300" class="center">
+
+
+Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są **ustrukturyzowane** jak i **nieustrukturyzowane** dane.
 Spowodowały one wyprodukowanie tysięcy nowych narzędzi do generowania, zbierania, przechowywania i przetwarzania informacji na niespotykaną dotąd skalę.
 
 Nowe wyzwania naukowe i biznesowe takie jak:
@@ -17,7 +20,7 @@ Nowe wyzwania naukowe i biznesowe takie jak:
 - symulacje giełdowe oparte o tysiące instrumentów finansowych,
 - rozpoznawanie miliardów przypadków efektów zderzeń protonówi produkcji cząstek elementarnych w LHC 
 
-stają się możliwe do realizacji dzięki budowie systemów opartych naotwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania ogromnych ilości danych.
+stają się możliwe do realizacji dzięki budowie systemów opartych na otwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania ogromnych ilości danych.
 
 Dziś systemy takie jak SAS, Apache Hadoop, Apache Spark czy Microsoft Azure używane są na szeroką skalę w wielu instytucjach i firmach niemal w każdej dziedzinie gospodarki. 
 Epoka „wielkich danych” stawia przed nami coraz to nowsze wyzwania związane nie tylko z ilością, ale i z czasem przetwarzania danych.
@@ -57,13 +60,6 @@ Jednym z największych źródeł danych jest obecnie **sieć WEB**
 Rok temu **at least 5.55 billion pages** (Thursday, 14 February, 2019). 
 Obecnie **at least 5.72 billion pages** (Friday, 14 August, 2020).
 
-### W jakim celu przechowuje się tak olbrzymie wolumeny danych ?
-
-Niewielka część gromadzonych danych analizowanych jest w praktyce !!!
-
-W jaki sposób efektywnie i racjonalnie wykorzystać zgromadzone dane do celów wspomagania działalności biznesowej ?
-
-Czy można wykorzystać dane transakcyjne aby zwiększyć sprzedaż i poprawić rentowność ?
 
 # Trochę historii
 
@@ -174,38 +170,48 @@ Za pomocą ML identyfikujemy procesy, dzięki którym zdobywamy wiedzę nie zaws
 Jest narzędziem stosowanym do wieloskalowego przetwarzania danych i świetnie nadaje się do obsługi złożonych zbiorów danych. 
 Zdolność predykcji modeli ML wykorzystuje się bardzo często do systemów sztucznej inteligencji (**AI**).
 
-1. Uczenie nadzorowane (_supervised_)
+## Definicja 1
+
+> (ML) to dziedzina nauki dająca komputerom możliwość uczenia się bez konieczności ich jawnego programowania. - A. Samuel, 1959
+
+## Definicja 2 
+
+> Mówimy, że program komputerowy uczy się na podstawie doświadczenia E w odniesieniu do jakiegoś zadania T i pewnej miary wydajności P, jeśli jego wydajność wobec zadania T wzrasta wraz z nabywaniem doświadczenia E. - T. Mitchell, 1997
+
+Najczęściej rodzaje systemów uczenia maszynowego dzielimy ze względu na nadzór człowieka w procesie trenowania: 
+
+1. Uczenie nadzorowane (_supervised learning_). Dane uczące przekazywane do algorytmów zawierają dołączone etykiety (_labels_)
 
 - Klasyfikacja
-- Regresja dla przewidywania wyników ciągłych 
+- Regresja dla przewidywania wyników ciągłych
 
-2. Uczenie nienadzorowane (_unsupervised_)
+
+2. Uczenie nienadzorowane (_unsupervised learning_). Dane uczące są nieoznakowane.
 
 - Wyznaczanie podzbiorów za pomocą grupowania
 - Redukowanie wymiarowości w celu kompresji danych
 
-3. Uczenie przez wzmocnienie (_reinforcement learning_)
+3. Uczenie przez wzmocnienie (_reinforcement learning_). System uczący (agent) obseruje środowisko i dobiera wykonywane czynności tak by odbierać nagrody (lub kary). Uczy się w ten sposób najlepszej strategii (polityki) tak by zmaksymalizować nagrodę. 
 
-W pythonie uczeniu maszynowemu poświęcony jest pakiet _scikit-learn_. 
-
-
+ 
 ### Algorytmy
 
 - regresja liniowa
 - regresja logistyczna
-- drzewa decyzyjne
-- lasy losowe
+- drzewa decyzyjne i lasy losowe
+- sieci neuronowe
 - XGB
-- k-średnie
+- k-najbliższych sąsiadów 
 - naiwny Bayes
-- ...
+- maszyny wektorów nośnych
+- k-means
+- hierarchiczna analiza skupień
+- analiza głównych składowych
+- reguły asocjacyjne
+- detekcja anomalii 
 
-## Sieci neuronowe 
 
-Perceprton jako jednowarstwowa sieć w przód.
-
-
-# Deep learning
+# Uczenie głębokie (Deep Learning)
 
 
 ## Zastosowania praktyczne 
@@ -225,16 +231,35 @@ Perceprton jako jednowarstwowa sieć w przód.
 7. inne - pojazdy bezzałogowe, system rozpoznawania celów, systemy czytające notatki lekarskie, systemy wykrywania twarzy
 
 
+Innym (bardziej nas insteresującym) kryterium stosowanym do klasyfikowania ML jest możliwość trenowania przyrostowego przy użyciu strumienia nadsyłanych danych. 
+
+1. W mechanizmie uczenia wsadowego (_batch learning_) do nauki muszą wystarczyć wszystkie dostępne dane. Zazwyczaj stosowane (szczególnie do nauki) wymaga jednak dużej ilości czasu i zasobów. Prowadzony w trybie offline. System najpierw jest uczony, a następnie wdrożony zostaje do cyklu produkcyjnego. Pojawiające się nowe dane wymagają uczenia systemu od początku i zastąpnia starego nowym. Proces ten łatwo zautomatyzować jednak wymaga on sporego nakładu. 
+
+2. W mechanizmie uczenia przyrostowego (_online learning_) system jest trenowany na bieżąco poprzez sekwencyjne dostarczanie danych. Bardzo często zamiast pojedynczych przypadków (wierszy) generowane są minipakiety (_mini-batches_). Uczenie takie sprawdza się dobrze w systemach odbierających ciągły strumień nowych danych (np. ceny akcji). Co ciekawe dane użyte do nauki nie muszą być przetrzymywane i moża się ich pozbyć. Najczęściej systemy takie używane są do śledzenia działania urządzeń oraz reagowania na ich nienormalne działanie. 
+
+# Data Science Lifecycle
+
+![cykl](img/rys2.png)
+
+
 # Implementacja algorytmów uczenia maszynowego w celach klasyfikacji
 
 Wszystkie programy i kody będziemy pisać w języku python. 
 
+Wszystkie potrzebne środowiska uruchomieniowe (python, jupyter notebook, spark etc.) będą dostępne za pośrednictwem kontenerów dockera. 
+
 1. Obiektowe programowanie w pythonie
-2. Wdrożenie modelu z wykorzystaniem biblioteki Flask
-3. Docker jako narzędzie kontyneryzacji aplikacji 
+2. Wdrożenie modelu na środowisko produkcyjne z wykorzystaniem biblioteki Flask
+3. * Docker jako narzędzie kontyneryzacji aplikacji 
 
 
 [Docker z jupyter notebookiem](https://hub.docker.com/repository/docker/sebkaz/docker-data-science)
 
-[Pobierz notatnik](notebooks/cw1.ipynb)
+
+[Pobierz notatnik](notebooks/cw1.ipynb) i zapisz w swoim katalogu (np. notebooks). 
+Następnie w konsoli uruchom dockera z jupyterem.
+```{bash}
+docker pull sebkaz/docker-data-science
+docker run -d -p 8888:8888 -v "<wybrany katalog>:/opt/notebooks" --name jupyter sebkaz/docker-data-science
+```
 

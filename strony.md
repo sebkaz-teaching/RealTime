@@ -11,6 +11,7 @@ title: Strony WWW
 3. [www.python.org](http://www.python.org/downloads/)
 4. [PyPI python libraries](https://pypi.python.org/pypi)
 5. [Anaconda](http://continuum.io/downloads)
+6. [Docker](https://docs.docker.com/get-docker/)
 
 ## Pakiety python dla analiz danych
 
