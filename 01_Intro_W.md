@@ -6,7 +6,7 @@ mathjax: true
 
 # Dane
 
-<img src="RealTime/img/main.jpeg" alt="Paris"  width="460" height="300" class="center">
+<img src="../img/main.jpeg" alt="Paris"  width="460" height="300" class="center">
 
 
 Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są **ustrukturyzowane** jak i **nieustrukturyzowane** dane.
