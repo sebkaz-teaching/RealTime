@@ -60,12 +60,12 @@ Powiązania: (Analiza danych - Big Data)K2A_W01, (Analiza danych - Big Data)K2A
 Metody weryfikacji: kolokwium pisemne (pytania otwarte, zadania)
 Metody dokumentacji: wykaz pytań z kolokwium
 
-- zna typy danych ustrukturyzowanych jak i nieustrukturyzowanych
+- Zna typy danych ustrukturyzowanych jak i nieustrukturyzowanych
 Powiązania: (Analiza danych - Big Data)K2A_W02, (Analiza danych - Big Data)K2A_W04, (OGL)O2_W04, (OGL) O2_W07
 Metody weryfikacji: projekt
+Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
-- Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
-Znać możliwości i obszary zastosowania procesowania danych w czasie rzeczywistym
+- Zna możliwości i obszary zastosowania procesowania danych w czasie rzeczywistym
 Powiązania: (Analiza danych - Big Data)K2A_W01, (Analiza danych - Big Data)K2A_W02, (OGL)O2_W01, (OGL) O2_W04, (OGL)O2_W08
 Metody weryfikacji: egzamin pisemny (pytania otwarte, zadania)
 Metody dokumentacji: wykaz pytań egzaminacyjnych
@@ -80,65 +80,53 @@ Powiązania: (Analiza danych - Big Data)K2A_W02, (Analiza danych - Big Data)K2A
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
-- Rozumieć potrzeby biznesowe podejmowania decyzji w bardzo krótkim czasie
+- Rozumie potrzeby biznesowe podejmowania decyzji w bardzo krótkim czasie
 Powiązania: (Analiza danych - Big Data)K2A_W01, (Analiza danych - Big Data)K2A_W05, (OGL)O2_W01, (OGL) O2_W04, (OGL)O2_W06, (OGL)O2_W08
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
 2. Umiejętności:
 
-- Rozróżniać typy danych strukturyzowanych jak i niestrukturyzowanych
-Powiązania: (Analiza danych - Big Data)K2A_U02, (Analiza danych - Big Data)K2A_U07, (Analiza danych - Big Data) K2A_U10, (OGL)O2_U02
+- Rozróżnia typy danych strukturyzowanych jak i niestrukturyzowanych
+Powiązania: K2A_U02, K2A_U07, K2A_U10, O2_U02
 Metody weryfikacji: test
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
 - Umie przygotować, przetwarzać oraz zachowywać dane generowane w czasie rzeczywistym
-Powiązania: (Analiza danych - Big Data)K2A_U03, (Analiza danych - Big Data)K2A_U05, (Analiza danych - Big Data) K2A_U09, (OGL)O2_U02, (OGL)O2_U04
+Powiązania:  K2A_U03, K2A_U05, K2A_U09, O2_U02, O2_U04
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
- - rozumie ograniczenia wynikające z czasu przetwarzania przez urządzenia oraz systemy informatyczne
-Powiązania: (Analiza danych - Big Data)K2A_U01, (Analiza danych - Big Data)K2A_U07, (Analiza danych - Big Data) K2A_U11, (OGL)O2_U02
-Metody weryfikacji: projekt
-Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
-zastosować i skonstruować system do przetwarzania w czasie rzeczywistym
-Powiązania: (Analiza danych - Big Data)K2A_U05, (Analiza danych - Big Data)K2A_U10, (OGL)O2_U05, (OGL) O2_U06, (OGL)O2_U07
+- Rozumie ograniczenia wynikające z czasu przetwarzania przez urządzenia oraz systemy informatyczne
+Powiązania:  K2A_U01, K2A_U07, K2A_U11, O2_U02
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
-- umie przygotować raportowanie dla systemu przetwarzania w czasie rzeczywistym
-Powiązania: (Analiza danych - Big Data)K2A_U02, (Analiza danych - Big Data)K2A_U08, (Analiza danych - Big Data) K2A_U10, (OGL)O2_U06, (OGL)O2_U07
+- Umie zastosować i skonstruować system do przetwarzania w czasie rzeczywistym
+Powiązania:  K2A_U05, K2A_U10, O2_U05, O2_U06, O2_U07
+Metody weryfikacji: projekt
+Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
+
+- Umie przygotować raportowanie dla systemu przetwarzania w czasie rzeczywistym
+Powiązania: K2A_U02, K2A_U08, K2A_U10, O2_U06, O2_U07
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
 3. Kompetencje:
 
-- formułuje problem analityczny wraz z jego informatycznym rozwiązaniem
-Powiązania: (Analiza danych - Big Data)K2A_K01, (Analiza danych - Big Data)K2A_K03, (OGL)O2_K02, (OGL) O2_K06, (OGL)O2_K07
+- Formułuje problem analityczny wraz z jego informatycznym rozwiązaniem
+Powiązania: K2A_K01, K2A_K03, O2_K02,  O2_K06, O2_K07
 Metody weryfikacji: projekt, prezentacja
-Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
+Metody dokumentacji: prace pisemne studenta (w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
-- utrwala umiejętność samodzielnego uzupełniania wiedzy teoretycznej jak i praktycznej w zakresie programowania,
-modelowania, nowych technologii informatycznych z wykorzystaniem analizy w czasie rzeczywistym. Powiązania: (Analiza danych - Big Data)K2A_K02, (Analiza danych - Big Data)K2A_K04, (OGL)O2_K01, (OGL) O2_K02, (OGL)O2_K05, (OGL)O2_K06
+- Utrwala umiejętność samodzielnego uzupełniania wiedzy teoretycznej jak i praktycznej w zakresie programowania,
+modelowania, nowych technologii informatycznych z wykorzystaniem analizy w czasie rzeczywistym. Powiązania: K2A_K02, K2A_K04, (OGL)O2_K01, (OGL) O2_K02, (OGL)O2_K05, (OGL)O2_K06
 Metody weryfikacji: projekt
 Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, egzaminacyjne)
 
 
 
 ## Harmonogram
-
-Zajęcia odbywają się w **...** w ....
-
-- **Wykład** od 8:00 do 9:30
-- **Laboratorium** od 9:45 do 11:15
-
-
-data        | Wykład      | ćwiczenia
-------------|-------------|-----------------
-Luty 21  |Wiadomości wstępne | |
-Luty 28 |  Software installation, Python cz1| 
-Marzec 7  | Big Data  | Python cz2| 
-Marzec 15  | TBA  
 
 
 ## Realizacja przedmiotu

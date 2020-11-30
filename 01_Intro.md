@@ -10,13 +10,22 @@ mathjax: true
 
 
 Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są **ustrukturyzowane** jak i **nieustrukturyzowane** dane.
-Spowodowały one wyprodukowanie tysięcy nowych narzędzi do generowania, zbierania, przechowywania i przetwarzania informacji na niespotykaną dotąd skalę.
+
+> Podaj przykład danych ustrukturyzowanych i nieustrukturyzowanych.
+
+Dane przyczyniły się do powstania tysięcy nowych narzędzi do `generowania`, `zbierania`, `przechowywania` i `przetwarzania` informacji na niespotykaną dotąd skalę.
+
+Dane istnieją od bardzo dawna.
+Z początku były one generowane w postaci obrazów w jaskiniach.
+Po wprowadzeniu stystemu pisma można było prowadzić rachunkowości czy rejestry wszelakich rzeczy. 
+Informacje o najgłębszych jeziorach, najbardziej zaludnionych krajach, spis rzek itp. były publikowane w wielu rodziajach encyklopedii. 
+Przed powstaniem maszyn proces pomiarów i ręcznego zapisywania trwał bardzo długo i był bardzo pracochłonny. Dziś maszyny te dostępne są dla każdego człowieka w postaci komputerów czy telefonów. 
 
 Nowe wyzwania naukowe i biznesowe takie jak:
 
 - inteligentna reklama tysięcy produktów dla milionów klientów,
 - przetwarzanie danych o genach, RNA czy też białkach [genus](http://genus.fuw.edu.pl),
--inteligentne wykrywanie różnorodnych sposobów nadużyć wśródsetek miliardów transakcji kart kredytowych,
+- inteligentne wykrywanie różnorodnych sposobów nadużyć wśródsetek miliardów transakcji kart kredytowych,
 - symulacje giełdowe oparte o tysiące instrumentów finansowych,
 - rozpoznawanie miliardów przypadków efektów zderzeń protonówi produkcji cząstek elementarnych w LHC 
 

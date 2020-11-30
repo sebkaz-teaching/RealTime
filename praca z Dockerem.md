@@ -27,11 +27,15 @@ docker run hello-world
 
 ```{bash}
 docker image ls
+
+docker images
 ```
 
 4. Przegląd uruchomionych kontenerów:
 
 ```{bash}
+docker ps 
+
 docker ps -all
 ```
 
@@ -43,7 +47,7 @@ docker stop <CONTAINER ID>
 
 6. Usunięcie kontenera
 ```{bash}
-docker rm --force <CONTAINER ID>
+docker rm -f <CONTAINER ID>
 ```
 
 Polecam również [krótkie intro](https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98)
