@@ -7,7 +7,6 @@ title: Praca z systemem GIT
 
 Tekst na podstawie [strony](http://pbiecek.github.io/Przewodnik/Programowanie/jak_korzystac_z_serwisu_github_i_waffle.html)
 
-
 ![Final](img/final.gif)
 
 Pracując nad projektem np. praca magisterska, (samodzielnie lub w zespole) często potrzebujesz sprawdzić jakie zmiany, kiedy i przez kogo zostały wprowadzone do projektu.
@@ -19,6 +18,10 @@ Jednym z najbardziej rozpoznawanych jest [GitHub](www.github.com) dzięki które
 
 W darmowej wersji serwisu `GitHub` swoje pliki możesz przechowywać w publicznych (dostęp mają wszyscy) repozytoriach.  
 Skupimy się wyłącznie na darmowej wersji serwisu GitHub.
+
+```{bash}
+git --version
+```
 
 ## Struktura GitHuba
 
@@ -77,3 +80,4 @@ git commit -m " opis "
 # 3. potem już zostaje tylko
 git push origin master
 ```
+Warto obejrzeć [Youtube course](https://www.youtube.com/watch?v=HVsySz-h9r4).
