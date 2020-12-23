@@ -67,6 +67,7 @@ Very Long Baseline Interferometry posiada 16 teleskopów, gdzie każdy produkuje
 - Jednym z największych źródeł danych jest obecnie **sieć WEB** [WorldWideWebSize.com](http://www.worldwidewebsize.com). 
 
 (Thursday, 14 February, 2019) **at least 5.55 billion pages** . 
+
 (Friday, 14 August, 2020) **at least 5.72 billion pages** .
 
 Od strony biznesowej: 
@@ -159,13 +160,13 @@ jakie są ogólne korelacje sprzedaży ze względu na lokalizacje i asortyment ?
 
 ### Dalsze rozwiązania ?
 
-# Eksploracja Danych (Data Mining)
 
-## Definicja 1
+# Technologia 
 
-> Eksploracja danych jest procesem odkrywania znaczących nowych powiązań, wzorców i trendów przez przeszukiwanie zgromadzonych danych przy wykorzystaniu metod rozpoznawania wzorców, jak również metod statystycznych i matematycznych.
 
-## Definicja 2
+
+
+## Eksploracja Danych (Data Mining)
 
 > Eksploracja danych jest między dyscyplinarną dziedziną, łącząca techniki uczenia maszynowego, rozpoznawania wzorców, statystyki, bez danych i wizualizacji w celu uzyskiwania informacji z dużych baz danych.
 
@@ -173,7 +174,7 @@ Wszystkie definicje wskazują, iż celem eksploracji danych jest odkrywanie zale
 
 **W wyniku realizacji procesu eksploracji danych otrzymujemy:**
 
-## MODEL
+### MODEL
 
 Modelami mogą być:
 
