@@ -13,6 +13,8 @@ Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilo
 
 > Podaj przykład danych ustrukturyzowanych i nieustrukturyzowanych.
 
+> Zna typy danych ustrukturyzowanych jak i nieustrukturyzowanych (K2A_W02, K2A_W04, O2_W04, O2_W07)
+
 Dane przyczyniły się do powstania tysięcy nowych narzędzi do `generowania`, `zbierania`, `przechowywania` i `przetwarzania` informacji na niespotykaną dotąd skalę.
 
 Dane istnieją od bardzo dawna.
@@ -25,9 +27,9 @@ Nowe wyzwania naukowe i biznesowe takie jak:
 
 - inteligentna reklama tysięcy produktów dla milionów klientów,
 - przetwarzanie danych o genach, RNA czy też białkach [genus](http://genus.fuw.edu.pl),
-- inteligentne wykrywanie różnorodnych sposobów nadużyć wśródsetek miliardów transakcji kart kredytowych,
+- inteligentne wykrywanie różnorodnych sposobów nadużyć wśród setek miliardów transakcji kart kredytowych,
 - symulacje giełdowe oparte o tysiące instrumentów finansowych,
-- rozpoznawanie miliardów przypadków efektów zderzeń protonówi produkcji cząstek elementarnych w LHC 
+- rozpoznawanie miliardów przypadków efektów zderzeń protonów i produkcji cząstek elementarnych w LHC 
 
 stają się możliwe do realizacji dzięki budowie systemów opartych na otwartym oprogramowaniu, jak również dzięki wykorzystaniu domowych komputerów do wspomagania przetwarzania ogromnych ilości danych.
 
@@ -56,18 +58,27 @@ Mają one zastosowanie w takich dziedzinach jak:
 - Działalność przedsiębiorstw i instytucji (banki, ubezpieczalnie, sieci handlowe, urzędy ...). 
 AT&T obsługuje miliardy połączeń dziennie. 
 Danych jest tyle, że nie zapisuje się ich a analizy prowadzone są `on the fly`.
-- Ośrodki naukowe: $10^9$ rekordów danych astronomicznych, $10^2 \sim 10^3$ atrybutów w systemach diagnozy medycznej. 
+- Ośrodki naukowe: $10^9$ rekordów danych astronomicznych, $10^2 \sim 10^3$ atrybutów w systemach diagnozy medycznej, 30 petabajtów rocznie w LHC. 
 Very Long Baseline Interferometry posiada 16 teleskopów, gdzie każdy produkuje 1 Gigabit/sec danych astronomicznych w czasie 25 dniowej sesji obserwacyjnej.
 - Baza danych [BrainMaps](http://brainmaps.org) zawiera ponad 50 TB danych z mapami mózgów ssaków.
-- Systemy monitorujące pracę urządzeń
+- Giełda NYSE 4-5 terabajtów dziennie
+- Facebook - 7 petabajtów miesięcznie
+- [Ancestry.com](https://www.ancestry.com) drzewo genealogiczne - $>10$ petabajtów danych
+- Jednym z największych źródeł danych jest obecnie **sieć WEB** [WorldWideWebSize.com](http://www.worldwidewebsize.com). 
+
+(Thursday, 14 February, 2019) **at least 5.55 billion pages** . 
+(Friday, 14 August, 2020) **at least 5.72 billion pages** .
+
+Od strony biznesowej: 
+
+- `Strumień danych` generowany przez pojedynczych ludzi szybko rośnie - [MyLifeBits](https://www.microsoft.com/en-us/research/project/mylifebits/)
+- Największy wzrost danych przewiduje się w ramach IoT (czujniki, ślady GPS, transakcje handlowe, etc.)
+- Przedsiębiorstwa nie mogą ograniczać się tylko do zarządzania własnymi danymi !!! SUKCES = umiejętność uzyskania wartości z firmowych danych.
+- Jak przetwarzać publicznie dostępne dane ?  Projekt [Public Data Sets](http://infochimps.org)
+- Projekt [Astrometry](http://astrometry.net) - analiza zdjęć z Flickr w celu identyfikacji gwiazd i innych obiektów.
 
 
-## WWW jako źródło danych
-
-Jednym z największych źródeł danych jest obecnie **sieć WEB**
-[WorldWideWebSize.com](http://www.worldwidewebsize.com). 
-Rok temu **at least 5.55 billion pages** (Thursday, 14 February, 2019). 
-Obecnie **at least 5.72 billion pages** (Friday, 14 August, 2020).
+> Jak archiwizować osobiste informacje, które mogą trafić do powszechnego użytku ? 
 
 
 # Trochę historii
@@ -80,9 +91,9 @@ Obecnie **at least 5.72 billion pages** (Friday, 14 August, 2020).
 
 ## Modele przetwarzania danych
 
-Większość danych przechowywana jest w bazach lub hurtowniach danych.
-Standardowo dostęp do danych sprowadza się najczęściej do realizacji zapytań poprzez aplikacje. 
-Sposób wykorzystania i realizacji procesu dostępu do bazy danych nazywamy **modelem przetwarzania**.
+Większość danych przechowywana jest w bazach lub hurtowniach danych.
+Standardowo dostęp do danych sprowadza się najczęściej do realizacji zapytań poprzez aplikacje. 
+Sposób wykorzystania i realizacji procesu dostępu do bazy danych nazywamy **modelem przetwarzania**.
 
 ### Model Tradycyjny
 
@@ -107,14 +118,14 @@ A co w przypadky gdy mamy doczynienia z:
 
 Badania nad tego typu zagadnieniami doprowadziły do sformułowania nowego modelu przetwarzania danych oraz nowego typu baz danych - **Hurtownie Danych** _(Data warehouse)_.
 
-### OLAP
+### Model OLAP
 
 **Przetwarzanie analityczne on-line OLAP (on-line analytic processing).**
 
  Wspieranie procesów analizy i dostarczanie narzędzi umożliwiających analizę wielowymiarową (czas, miejsce, produkt).
 
- Analiza danych z hurtowni to przede wszystkim obliczanie **agregatów** (podsumowań) dotyczących wymiarów hurtowni. 
- Proces ten jest całkowicie sterowany przez użytkownika.
+ Analiza danych z hurtowni to przede wszystkim obliczanie **agregatów** (podsumowań) dotyczących wymiarów hurtowni. 
+ Proces ten jest całkowicie sterowany przez użytkownika.
 
 **Przykład**
 
@@ -125,13 +136,13 @@ Jak przeanalizować zapytania:
 2. Jaka jest sprzedaż produktów z podziałem na rodzaje produktów ?
 3. Jaka jest sprzedaż produktów z podziałem na oddziały supermarketu ?
 
-Odpowiedzi na te pytania pozwalają określić `wąskie gardła` sprzedaży produktów przynoszących deficyt, zaplanować zapasy w magazynach czy porównać sprzedaż różnych grup w różnych oddziałach supermarketu.
+Odpowiedzi na te pytania pozwalają określić `wąskie gardła` sprzedaży produktów przynoszących deficyt, zaplanować zapasy w magazynach czy porównać sprzedaż różnych grup w różnych oddziałach supermarketu.
 
 ## OLAP $\to$ Data Mining
 
-OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. 
-Użytkownik formułuje zapytania i dokonuje analizy. 
-Rozszerzenie standardu języka dostępu do baz danych SQL o możliwość efektywnego przetwarzania złożonych zapytań zawierających agregaty.
+OLAP to : analiza danych hurtowni sterowana całkowicie przez użytkownika. 
+Użytkownik formułuje zapytania i dokonuje analizy. 
+Rozszerzenie standardu języka dostępu do baz danych SQL o możliwość efektywnego przetwarzania złożonych zapytań zawierających agregaty.
 
 ### Wady OLAP
 
@@ -143,19 +154,22 @@ czy można przewidzieć popyt na określone produkty ?
 jakie są ogólne korelacje sprzedaży ze względu na lokalizacje i asortyment ? ...
 - Brak automatyzacji procesu analizy oraz ograniczony zakres analizy.
 
+> Zna historię i filozofię modeli przetwarzania danych (K2A_W01, K2A_W03, O2_W01, O2_W02, O2_W04, O2_W07) 
+
+
 ### Dalsze rozwiązania ?
 
 # Eksploracja Danych (Data Mining)
 
 ## Definicja 1
 
-> Eksploracja danych jest procesem odkrywania znaczących nowych powiązań, wzorców i trendów przez przeszukiwanie zgromadzonych danych przy wykorzystaniu metod rozpoznawania wzorców, jak również metod statystycznych i matematycznych.
+> Eksploracja danych jest procesem odkrywania znaczących nowych powiązań, wzorców i trendów przez przeszukiwanie zgromadzonych danych przy wykorzystaniu metod rozpoznawania wzorców, jak również metod statystycznych i matematycznych.
 
 ## Definicja 2
 
-> Eksploracja danych jest między dyscyplinarną dziedziną, łącząca techniki uczenia maszynowego, rozpoznawania wzorców, statystyki, bez danych i wizualizacji w celu uzyskiwania informacji z dużych baz danych.
+> Eksploracja danych jest między dyscyplinarną dziedziną, łącząca techniki uczenia maszynowego, rozpoznawania wzorców, statystyki, bez danych i wizualizacji w celu uzyskiwania informacji z dużych baz danych.
 
-Wszystkie definicje wskazują, iż celem eksploracji danych jest odkrywanie zależności, które nie były wcześniej znane odbiorcy.
+Wszystkie definicje wskazują, iż celem eksploracji danych jest odkrywanie zależności, które nie były wcześniej znane odbiorcy.
 
 **W wyniku realizacji procesu eksploracji danych otrzymujemy:**
 
