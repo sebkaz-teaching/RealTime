@@ -20,7 +20,7 @@ Dane przyczyniły się do powstania tysięcy nowych narzędzi do `generowania`, 
 Dane istnieją od bardzo dawna.
 Z początku były one generowane w postaci obrazów w jaskiniach.
 Po wprowadzeniu stystemu pisma można było prowadzić rachunkowości czy rejestry wszelakich rzeczy. 
-Informacje o najgłębszych jeziorach, najbardziej zaludnionych krajach, spis rzek itp. były publikowane w wielu rodziajach encyklopedii. 
+Informacje o najgłębszych jeziorach, najbardziej zaludnionych krajach, spis rzek itp. były publikowane w wielu rodzajach encyklopedii. 
 Przed powstaniem maszyn proces pomiarów i ręcznego zapisywania trwał bardzo długo i był bardzo pracochłonny. Dziś maszyny te dostępne są dla każdego człowieka w postaci komputerów czy telefonów. 
 
 Nowe wyzwania naukowe i biznesowe takie jak:
@@ -36,7 +36,7 @@ stają się możliwe do realizacji dzięki budowie systemów opartych na otwarty
 Dziś systemy takie jak SAS, Apache Hadoop, Apache Spark czy Microsoft Azure używane są na szeroką skalę w wielu instytucjach i firmach niemal w każdej dziedzinie gospodarki. 
 Epoka „wielkich danych” stawia przed nami coraz to nowsze wyzwania związane nie tylko z ilością, ale i z czasem przetwarzania danych.
 
-W ramach badań nad algorytmami i sztuczną inteligencją (ang. _Artificial Inteligence_ AI) pojawiły się nowe gałęzie badań, które dziś możemy określić jako **machine learning** (ML) oraz **deep learning**(DL).
+W ramach badań nad algorytmami i sztuczną inteligencją (ang. _Artificial Inteligence_ AI) pojawiły się nowe gałęzie badań, które dziś możemy określić jako **machine learning** (ML) oraz **deep learning** (DL).
 Dzięki nim powstała możliwość pozyskiwania wiedzy bezpośrenio z informacji zawartych w danych oraz tworzenia na tej podstawie przewidywania zachowywania się badanego układu. 
 Dzięki ML i DL nie trzeba już zatrudniać setki ludzi do ręcznego wyznaczania regół czy tworzenia modeli.
 Omawiane dziedziny oferują efektywniejsze rozwiązanie polegające na stopniowym poprawianiu skuteczności modeli predykcyjnych oraz podejmowaniu decyzji na podstawie analizowanych danych. 

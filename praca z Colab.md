@@ -1,7 +1,16 @@
 ---
 layout: page
-title: Praca z Colab
+title: Praca z Pythonem
 ---
+
+# Python 
+
+## Anaconda 
+
+## Docker
+
+
+
 
 # Google Colab
 
