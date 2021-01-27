@@ -55,6 +55,9 @@ Mają one zastosowanie w takich dziedzinach jak:
 
 ### Główne źródła danych
 
+
+[Przepływ Big Data](https://www.internetlivestats.com)
+
 - Działalność przedsiębiorstw i instytucji (banki, ubezpieczalnie, sieci handlowe, urzędy ...). 
 AT&T obsługuje miliardy połączeń dziennie. 
 Danych jest tyle, że nie zapisuje się ich a analizy prowadzone są `on the fly`.
