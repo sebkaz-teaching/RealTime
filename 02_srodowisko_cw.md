@@ -6,10 +6,10 @@ mathjax: true
 
 # Przygotowanie środowiska pracy 
 
-1. [Git](/praca%20z%20Git/)
-2. [Docker](/praca%20z%20Dockerem/) 
+1. [Git](/praca_z_Git/)
+2. [Docker](/praca_z_Dockerem/) 
 3. Jupyter notebook
-4. [Colab](/praca%20z%20Colab/)
+4. [Colab](/praca_z_Colab/)
 
 
 ## Git - uniwersalne repozytorium 
