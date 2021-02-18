@@ -1,12 +1,7 @@
----
-layout: page
-title: 01 -- Offline/Online Learning 
-mathjax: true
----
 
 # Dane
 
-<img src="../img/main.jpeg" alt="Paris"  width="460" height="300" class="center">
+<img src="../img/main.jpeg" alt="dane"  width="460" height="300" class="center">
 
 
 Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilości nowego zasobu jakim są **ustrukturyzowane** jak i **nieustrukturyzowane** dane.
@@ -16,6 +11,7 @@ Rozwój technologii informatycznych spowodował dostęp do niewyobrażalnych ilo
 > Zna typy danych ustrukturyzowanych jak i nieustrukturyzowanych (K2A_W02, K2A_W04, O2_W04, O2_W07)
 
 Dane przyczyniły się do powstania tysięcy nowych narzędzi do `generowania`, `zbierania`, `przechowywania` i `przetwarzania` informacji na niespotykaną dotąd skalę.
+
 
 Dane istnieją od bardzo dawna.
 Z początku były one generowane w postaci obrazów w jaskiniach.
@@ -85,7 +81,7 @@ Od strony biznesowej:
 > Jak archiwizować osobiste informacje, które mogą trafić do powszechnego użytku ? 
 
 
-# Trochę historii
+## Trochę historii
 
 - Lata 60-te : Kolekcje danych, bazy danych, sieciowe DNBMS
 - Lata 70-te : Relacyjne modele danych i ich implementacja w systemach OLTP
@@ -264,8 +260,5 @@ Innym (bardziej nas insteresującym) kryterium stosowanym do klasyfikowania ML j
 
 2. W mechanizmie uczenia przyrostowego (_online learning_) system jest trenowany na bieżąco poprzez sekwencyjne dostarczanie danych. Bardzo często zamiast pojedynczych przypadków (wierszy) generowane są minipakiety (_mini-batches_). Uczenie takie sprawdza się dobrze w systemach odbierających ciągły strumień nowych danych (np. ceny akcji). Co ciekawe dane użyte do nauki nie muszą być przetrzymywane i moża się ich pozbyć. Najczęściej systemy takie używane są do śledzenia działania urządzeń oraz reagowania na ich nienormalne działanie. 
 
-# Data Science Lifecycle
-
-![cykl](img/rys2.png)
 
 
