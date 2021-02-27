@@ -3,7 +3,7 @@ layout: page
 title: Praca z systemem GIT
 ---
 
-# Zacznij korzystać z serwisu GitHub
+## Zacznij korzystać z serwisu GitHub
 
 Tekst na podstawie [strony](http://pbiecek.github.io/Przewodnik/Programowanie/jak_korzystac_z_serwisu_github_i_waffle.html)
 

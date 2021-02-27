@@ -5,7 +5,7 @@ title: Praca z systemem Docker
 
 Wszystkie potrzebne programy będą dostarczane w postaci kontenerów dockera.
 
-# Zacznij korzystać z Dockera
+## Zacznij korzystać z Dockera
 
 W celu pobrania oprogramowania docer na swój system przejdź do [strony](https://docs.docker.com/get-docker/).
 
@@ -51,3 +51,8 @@ docker rm -f <CONTAINER ID>
 ```
 
 Polecam również [krótkie intro](https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98)
+
+
+## Docker jako narzędzie kontyneryzacji aplikacji
+
+[Docker z jupyter notebookiem](https://hub.docker.com/repository/docker/sebkaz/docker-data-science)
