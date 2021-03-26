@@ -54,11 +54,14 @@ title: Strony WWW
 
 ## Zbiory danych
 
+- [Internet Archive](https://oreil.ly/tIjl9)
+- [Reddit](http://reddit.com/r/datasets)
 - [KDnuggets](https://www.kdnuggets.com)
-- [Kaggle](https://www.kaggle.com/Competitions)
+- [Kaggle](https://www.kaggle.com/datasets)
 - [List of datasets for machine learning research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research)
-- [UCI Machine Learning Repo](http://archive.ics.uci.edu/ml/index.php)
+- [UCI Machine Learning Repo](https://oreil.ly/BXLA5)
 - [Public API](https://github.com/toddmotto/public-apis)
+- [Google Datatset Search](https://oreil.ly/Gpv8S)
 
 ## Python
 
