@@ -121,32 +121,42 @@ Przypomina nam najprostszy model KMNK (Klasycznej Metody Najmniejszych Kwadrató
 $y_i = w_0 + w_1x_{1i}+w_2x_{2i}$
 
 1. Zainicjowaliśmy wagi równe 0 dla każdego parametru.  
-```self.w_ = np.zeros(1+X.shape[1])```  
+```{python}
+self.w_ = np.zeros(1+X.shape[1])
+```  
 Początkowo nasz model wygląda tak:  
-$y_i = 0 + 0\times x_{1i} + 0\times x_{2i} $
+$$y_i = 0 + 0\times x_{1i} + 0\times x_{2i} $$
+
 2. Liczymy wartości z powyższego wzoru, czyli dla każdego elementu w dataframe X liczymy wartość y.  
-```def net_input(self, X):```  
-Korzystając z funkcji ```np.dot``` wymnażamy elementy z macierzy X przez odpowiadające im wagi i dodajemy wyraz wolny.  
+`def net_input(self, X):`  
+Korzystając z funkcji `np.dot` wymnażamy elementy z macierzy X przez odpowiadające im wagi i dodajemy wyraz wolny.  
 Ponieważ mnożymy wszytsko przez 0 i dodajemy zero to wynikiem jest 0.
+
 3. Przewidujemy, ustalamy punkt odcięcia na poziomie 0 i wyznaczamy, że dla wartości $y_i>=0$, wartością przewidywaną jest 1 (versicolor), a dla wartości $y_i<0$ wartością przewidywaną jest -1 (setosa). Dla każdej obserwacji otrzymujemy 0, czyli przewidujemy 1 (versicolor).
+
 4. Liczymy kolejne wagi.  
-```update = self.eta*(target-self.predict(xi))```  
-```self.w_[1:] += update*xi```  
-```self.w_[0] += update```  
+
+```{python}
+update = self.eta*(target-self.predict(xi))
+self.w_[1:] += update*xi
+self.w_[0] += update
+```  
 Dla każdej obserwacji obliczamy wartość update, czyli różnicę między wartością obserwowaną a przewidywaną.  
 Na przykładzie dla pierwszej obserwacji:  
-$x_{11}=5.1$  
-$x_{21}=1.4$  
-$y_1 = -1$  
-$\hat{y_1} = 1$  
-$update = 0.01*(-1 - 1) = 0.01*(-2) = - 0.02$  
-Tutaj kluczowa jest ustalana przez nas wartość ```eta```, która mówi jak bardzo pomyłka na predykcji ma się przełożyć na uaktualnienie wartości wag. W naszym przykładzie wybrano 0.01.
+$$x_{11}=5.1$$  
+$$x_{21}=1.4$$  
+$$y_1 = -1$$  
+$$\hat{y_1} = 1$$  
+$$ update = 0.01*(-1 - 1) = 0.01*(-2) = - 0.02$$  
+Tutaj kluczowa jest ustalana przez nas wartość `eta`, która mówi jak bardzo pomyłka na predykcji ma się przełożyć na uaktualnienie wartości wag. W naszym przykładzie wybrano 0.01.
 Teraz wyraz wolny uaktualniamy (funkcja liniowa zatem po prostu dodajemy) o wartość update, a wagi dla $w_{1}$ oraz $w_{2}$ o wartość $update$ przemnożoną przez odpowiednio przez $x_{11}$ oraz $x_{22}$.  
-$w_0 = 0 + (-0.02) = -0.02$  
-$w_1 = 0 + (-0.02)\times 5.1 = -0.102$  
-$w_2 = 0 + (-0.02)\times 1.4 = -0.028$  
-5. Dla obserwacji $x_{12},\;x_{22}$ nowy zestaw wag początkowych to:  
-$w_0 = -0.02;\;\;w_1 = -0.102;\;\;w_2 = -0.028$  
+$$w_0 = 0 + (-0.02) = -0.02$$ 
+$$w_1 = 0 + (-0.02)\times 5.1 = -0.102$$ 
+$$w_2 = 0 + (-0.02)\times 1.4 = -0.028$$  
+
+5. Dla obserwacji $x_{12},\;x_{22}$ nowy zestaw wag początkowych to: 
+
+$$w_0 = -0.02;\;\;w_1 = -0.102;\;\;w_2 = -0.028$$  
 6. Tak jak to zrobiliśmy powyżej powtarzamy dla każdej obserwacji. Za każdym razem sumujemy wartość $update$ do zmiennej $error$ po wszytskich obserwacjach dodajemy ją do listy wartości błedów, to pozwoli nam określić jak duży błąd model popełnia przy każdej iteracji. Jedna iteracja to przebięgniecie algorytmu po wszystkich obserwacjach. Parametrem ```n_iter``` możemy sterować ile tych iteracji wykonamy.  
 W rzeczywistości przy uczeniu sieci neuronowej najczęściej używa się dwóch kryteriów STOP (czyli kiedy przestać uczyć sieć) albo jest to właśnie ilość iteracji. Albo kryterium poprawności predykcji, gdy osiągniemy oczekiwany rezultat kończymy uczyć sieć.
 

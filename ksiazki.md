@@ -4,6 +4,11 @@ title: Książki
 ---
 
 
+## Stream Processing 
+
+1. G. Maas, F. Garillot _Stream Processing with Apache Spark_ [Zobacz opis](http://helion.pl/view/111546/e_11pp.html) lub [Kup e-book](http://helion.pl/add111546~e_11pp_ebook)
+
+2. F. Hueske, V. Kalavri _Stream Processing with Apache Flink_ [Zobacz opis](http://helion.pl/view/111546/e_13f8.html) lub [Kup e-book](http://helion.pl/add111546~e_13f8_ebook)
 
 ## Machine Learning with Pyton
 
@@ -40,6 +45,11 @@ title: Książki
 
 4. D. Osinga _Deep Learning. Receptury_ [Zobacz opis](http://helion.pl/view/111546/delere.html) lub [Kup książkę](http://helion.pl/add111546~delere), [Kup e-book](http://helion.pl/add111546~delere_ebook)
 
+5. S. Weidman _Uczenie głębokie od zera. Podstawy implementacji w Pythonie_ [Zobacz opis](http://helion.pl/view/111546/uczgle.html) lub [Kup książkę](http://helion.pl/add111546~uczgle), [Kup e-book](http://helion.pl/add111546~uczgle_ebook)
+
+6. D. Foster _Deep learning i modelowanie generatywne. Jak nauczyć komputer malowania, pisania, komponowania i grania_ [Zobacz opis](http://helion.pl/view/111546/deelmg.html) lub [Kup książkę](http://helion.pl/add111546~deelmg), [Kup e-book](http://helion.pl/add111546~deelmg_ebook)
+
+
 ## SPARK
 
 1. _Spark. Zaawansowana analiza danych (ebook)_ [Zobacz opis](http://helion.pl/view/111546/sparkz.html) lub [Kup e-book](http://helion.pl/add111546~sparkz_ebook)
@@ -55,6 +65,7 @@ title: Książki
 
 2. A. Allain _C++. Przewodnik dla początkujących_ [Zobacz opis](http://helion.pl/view/111546/cppppo.html) lub [Kup książkę](http://helion.pl/add111546~cppppo), [Kup e-book](http://helion.pl/add111546~cppppo_ebook)
 
+3. S. Dasgupta, C. Papadimitriou, U. Vazirani _Algorytmy_ PWN.
 
 ## Docker
 

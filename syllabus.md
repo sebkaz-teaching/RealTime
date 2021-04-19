@@ -15,14 +15,14 @@ title: Syllabus
 >
 > Poziom przedmiotu: średnio-zaawansowany
 >
-> Poniedziałek (08:00 - 9:30 wykład, 09:45 - 11:15 ćwiczenia)
+> Wtorek (13:30 - 15:00 wykład, 13:30 - 20:30 ćwiczenia)
 
 **Prowadzący:** [Sebastian Zając](https://sebastianzajac.pl), 
   [sebastian.zajac@sgh.waw.pl](mailto:sebastian.zajac@sgh.waw.pl)
 
 
 **Website:**
-  [http://sebkaz.github.io/RealTime](https://sebkaz.github.io/RealTime)
+  [http://sebkaz-teaching.github.io/RealTime](https://sebkaz-teaching.github.io/RealTime)
 
 
 
