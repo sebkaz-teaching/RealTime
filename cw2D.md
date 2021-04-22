@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 06 - Ćwiczenia 2 - OOP Python w przetwarzaniu 
+title: 06 - Ćwiczenia 2 - OOP Python w przetwarzaniu
 mathjax: true
 ---
 
@@ -42,17 +42,17 @@ dziecko.w_
 #### w naszym przypadku dziecko uczy się dwóch wag !
 
 ```{python}
-# implementacja 
+# implementacja
 class Perceptron():
-    
+
     def __init__(self,eta=0.01, n_iter=10):
         self.eta = eta
         self.n_iter = n_iter
-    
+
     def fit(self, X, y):
         self.w_ = np.zeros(1+X.shape[1])
         self.errors_ = []
-        
+
         for _ in range(self.n_iter):
             errors = 0
             for xi, target in zip(X,y):
@@ -65,10 +65,10 @@ class Perceptron():
                 errors += int(update != 0.0)
             self.errors_.append(errors)
         return self
-    
+
     def net_input(self, X):
         return np.dot(X, self.w_[1:])+self.w_[0]
-    
+
     def predict(self, X):
         return np.where(self.net_input(X)>=0.0,1,-1)
 
@@ -150,11 +150,11 @@ $$\hat{y_1} = 1$$
 $$ update = 0.01*(-1 - 1) = 0.01*(-2) = - 0.02$$  
 Tutaj kluczowa jest ustalana przez nas wartość `eta`, która mówi jak bardzo pomyłka na predykcji ma się przełożyć na uaktualnienie wartości wag. W naszym przykładzie wybrano 0.01.
 Teraz wyraz wolny uaktualniamy (funkcja liniowa zatem po prostu dodajemy) o wartość update, a wagi dla $w_{1}$ oraz $w_{2}$ o wartość $update$ przemnożoną przez odpowiednio przez $x_{11}$ oraz $x_{22}$.  
-$$w_0 = 0 + (-0.02) = -0.02$$ 
-$$w_1 = 0 + (-0.02)\times 5.1 = -0.102$$ 
+$$w_0 = 0 + (-0.02) = -0.02$$
+$$w_1 = 0 + (-0.02)\times 5.1 = -0.102$$
 $$w_2 = 0 + (-0.02)\times 1.4 = -0.028$$  
 
-5. Dla obserwacji $x_{12},\;x_{22}$ nowy zestaw wag początkowych to: 
+5. Dla obserwacji $x_{12},\;x_{22}$ nowy zestaw wag początkowych to:
 
 $$w_0 = -0.02;\;\;w_1 = -0.102;\;\;w_2 = -0.028$$  
 6. Tak jak to zrobiliśmy powyżej powtarzamy dla każdej obserwacji. Za każdym razem sumujemy wartość $update$ do zmiennej $error$ po wszytskich obserwacjach dodajemy ją do listy wartości błedów, to pozwoli nam określić jak duży błąd model popełnia przy każdej iteracji. Jedna iteracja to przebięgniecie algorytmu po wszystkich obserwacjach. Parametrem ```n_iter``` możemy sterować ile tych iteracji wykonamy.  
@@ -162,7 +162,7 @@ W rzeczywistości przy uczeniu sieci neuronowej najczęściej używa się dwóch
 
 
 ```{python}
-X # teraz musisz podawać dwie wartości 
+X # teraz musisz podawać dwie wartości
 ppn.predict([5.1,3.1])
 ppn.predict([[5.1,3.1],[6.2,4.1]])
 ```
@@ -200,10 +200,10 @@ plt.show()
 ```
 
 
-> Zadanie 
+> Zadanie
 
 ```{python}
-# ZADANIE - Opisz czym różni się poniższy algorytm od Perceprtona ? 
+# ZADANIE - Opisz czym różni się poniższy algorytm od Perceprtona ?
 class Adaline():
     '''Klasyfikator  - ADAptacyjny LIniowy NEuron'''
     def __init__(self, eta=0.01, n_iter=10):
@@ -231,7 +231,7 @@ class Adaline():
         return self.net_input(X)
 
     def predict(self, X):
-        return np.where(self.activation(X) >= 0.0, 1, -1) 
+        return np.where(self.activation(X) >= 0.0, 1, -1)
 ```
 
 ```{python}
@@ -263,7 +263,7 @@ plt.show()
 
 ```{python}
 
-### Zapisz swój najlepszy model 
+### Zapisz swój najlepszy model
 import pickle
 with open('model.pkl', "wb") as picklefile:
     pickle.dump(ppn, picklefile)
@@ -290,15 +290,15 @@ from flask import jsonify
 import numpy as np
 
 class Perceptron():
-    
+
     def __init__(self,eta=0.01, n_iter=10):
         self.eta = eta
         self.n_iter = n_iter
-    
+
     def fit(self, X, y):
         self.w_ = np.zeros(1+X.shape[1])
         self.errors_ = []
-        
+
         for _ in range(self.n_iter):
             errors = 0
             for xi, target in zip(X,y):
@@ -311,10 +311,10 @@ class Perceptron():
                 errors += int(update != 0.0)
             self.errors_.append(errors)
         return self
-    
+
     def net_input(self, X):
         return np.dot(X, self.w_[1:])+self.w_[0]
-    
+
     def predict(self, X):
         return np.where(self.net_input(X)>=0.0,1,-1)
 
@@ -339,10 +339,10 @@ def get_prediction():
     #            sepal_width,
     #            petal_length,
     #           petal_width]
-    
+
     features = [sepal_length,
                 petal_length]
-    
+
     print(features)
     # Load pickled model file
     with open('model.pkl',"rb") as picklefile:
@@ -359,3 +359,5 @@ if __name__ == '__main__':
 
 
 ```
+
+[kolejny ciekawy przykład z API we flasku i rozszerzeniu](https://towardsdatascience.com/how-to-deploy-machine-learning-models-as-a-microservice-using-fastapi-b3a6002768af)
