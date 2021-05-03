@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 06 - Ćwiczenia 2 - OOP Python w przetwarzaniu
+title: Ćwiczenia 2 - Python Obiekty 
 mathjax: true
 ---
 

@@ -1,0 +1,69 @@
+---
+layout: page
+title: Ćwiczenia 5 - Kafka podstawy
+mathjax: true
+---
+
+
+# Apache Kafka
+
+**Distributed Stream Processing System**
+
+Wieloserwerowa platforma do propagacji zdarzeń w rozproszonych systemach informatycznych.
+Stworzona na potrzeby LinkedIn w 2011 roku (napisana w Scala i Java). Obecnie zarządzana przez Apache Foundation. Cechuje się znakomitą skalowalnością horyzontalną. Pozwala na budowanie systemów (na klastrach) potrafiących propagować setki tysięcy zdarzeń dziennie.
+
+Do największych firm pracujących na Kafce należą: LinkedIn, Oracle, PayPal, Uber, Yahoo, Trivago, Twitter, Spotify, Skyscanner, Cisco, AirBnB, Adidas, Zalando czy Netflix.
+
+Kluczową cechą i podstawową funkcjonalnością tej technologii jest możliwość publikowania (za pomocą tzw. producentów) różnego rodzaj zdarzeń. Zdarzenia te następnie mogą zostać pobrane przez jednego (lub wielu) tzw. konsumentów.
+
+
+Jeśli nic z tego nie rozumiesz wyobraź sobie prostą sytuację:
+
+Nagrywasz video z kursem, który chcesz udostępniać. Jak możesz je rozprowadzać?
+- możesz nagrać je na dvd i wysyłać do odbiorców (którzy o to poproszą i dadzą adres)
+- możesz załączyć video (to chyba nie za duży film) do wiadomości email (tutaj również potrzebujesz zapytania, zgody no i ... adresu email).
+
+Teraz wyobraź sobie, że jednak wrzucasz film na YouTube - bądź inną platformę Brokerską. W tym momencie jesteś już Producentem (jednym z tysięcy).
+Produkujesz swoje źródła i kontent wrzucasz na platformę. Treść może być przechowywana na jakiejś bazie. Platforma ta wykorzystywana jest przez setki tysięcy użytkowników (Konsumentów) by odtwarzać zawartość wtedy kiedy mają na to chęć. Nie potrzebujesz znać ani ich adresu email, ani fizycznego adresu na który musisz wysłać film. Platforma działa jako broker. Przechowuje setki tysięcy rzeczy produkowanych przez Producentów (push data) i udostępnia każdemu, kto wyśle zapytanie pobierające (pull data). Zauważ, że jedno źródło może być przetwarzane przez wielu konsumentów na raz. Również jeden producent może generować dane o wielu tematach.
+
+<img src="https://docs.cloudera.com/documentation/kafka/1-2-x/images/kafka-architecture.png" />
+
+
+## Instalacja i weryfikacja
+
+1. Przejdź na [stronę Kafki](https://kafka.apache.org). Aktualna wersja stabilna `2.8.0`.
+2. Ściągnij plik z Binary downloads (wersja 2.12) i rozpakuj programem 7-zip . Uwaga w systemie Win rozpakuj również archiwum tar.
+3. Zmień nazwę katalogu na kafka i wrzuć go do przyjaznej lokalizacji (np na pulpit)
+4. W przypadku systemu Win przejdź do katalogu config i znajdź plik server.properties. Otwórz go w dowolnym edytorze i znajdź linie odpowiedzialną za ustawienie katalogu z logami. Ustaw katalog w swojej dogodnej lokalizacji. np. `C:\\Users\\szajac2\\Desktop\\kafka\\logs`
+[Instalacja WIN](https://reachmnadeem.wordpress.com/2020/08/30/kafka-2-6-up-and-running-in-windows-10/)
+
+5. Uruchom serwer zookeepera
+```{bash}
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+lub
+```{bash}
+bin\windows\zookeeper-server-start.sh config\zookeeper.properties
+```
+6. uruchom serwer Kafki
+```{bash}
+bin/kafka-server-start.sh config/server.properties
+```
+lub
+```{bash}
+bin\windows\kafka-server-start.sh config\server.properties
+```
+7.
+
+
+
+
+
+Kafka udostępnia API praktycznie we wszystkich istotnych językach programowania. Dla nas istotne jest API Pythona.
+
+**Kafka Connect** - zbiór gotowych adapterów pozwalających tworzyć zdarzenia na podstawie danych znajdujących się w rozwiązaniach służących do przechowywania lub przetwarzania danych tj. Active MQ, Amazon S3, ElasticSearch, Cassandra, MySQL, PostgresSQL, SQLServer czy MongoDB. Adaptery te pozwalająca zarówno na pobieranie danych jak i ich zapis.
+
+**Kafka Stream** - rozwiązanie pozwalające na transformację zdarzeń wewnątrz platformy. Wykorzystuje język zapytań KSQL pozwalając na wykonywanie skalowalnych i elastycznych zapytań na strumieniach danych. Najczęściej wykorzystywane do normalizacji danych przychodzących z różnych źródeł.
+
+
+## Kafka Topic

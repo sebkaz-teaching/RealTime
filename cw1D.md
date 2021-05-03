@@ -1,23 +1,23 @@
 ---
 layout: page
-title: 05 - Ćwiczenia 1 - OOP Python
+title: Ćwiczenia 1 - Python podstawy
 mathjax: true
 ---
 
 # Ćwiczenia 1
 
-- Przedstawienie środowiska Jupyter notebook (uruchomienie + Docker) 
-- Podstawy numpy i pandas 
-- Programowanie obiektowe w pythonie 
+- Przedstawienie środowiska Jupyter notebook (uruchomienie + Docker)
+- Podstawy numpy i pandas
+- Programowanie obiektowe w pythonie
 
 ## Podstawowa terminologia
 
-Dane będziemy przedstawiać w postaci tabelarycznej. 
-W pythonie najłatwiej wykorzystać do tego celu bibliotekę `Pandas`. 
+Dane będziemy przedstawiać w postaci tabelarycznej.
+W pythonie najłatwiej wykorzystać do tego celu bibliotekę `Pandas`.
 
 Będziemy starać się pisać kod w ujęciu obiektowym.
 
-## Przykładowe dane 
+## Przykładowe dane
 
 ```{python}
 import numpy as np
@@ -43,10 +43,10 @@ df.info()
 Powyżej przedstawiona została ramka danych stanowiąca fragment danych **Iris**.
 Zbiór ten składa się z wyników pomiarów czterech cech trzech gatunków kwiatów Irysa.
 
-Przez macierz _X_ będziemy oznaczali zbiór wszystkich przypadków i cech. 
-Co w naszym przypdaku generuje macierz 150 wierszy oraz 4 kolumn. 
+Przez macierz _X_ będziemy oznaczali zbiór wszystkich przypadków i cech.
+Co w naszym przypdaku generuje macierz 150 wierszy oraz 4 kolumn.
 
-Przez wektor _y_ oznaczać będziemy etykiety. 
+Przez wektor _y_ oznaczać będziemy etykiety.
 
 
 Zredukujmy nasze dane do dwóch gatunków i dwóch cech
@@ -59,7 +59,7 @@ Zredukujmy nasze dane do dwóch gatunków i dwóch cech
 
 <img src="http://latour-marliac.com/323-large_default/iris-versicolor-iris-versicolore.jpg">
 
-### Cechy kwiatów 
+### Cechy kwiatów
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Mature_flower_diagram.svg">
 
@@ -69,7 +69,7 @@ y = df.iloc[0:100,4]
 y.unique()
 ```
 
-Zamiana na wartości 1, -1. 
+Zamiana na wartości 1, -1.
 
 ```{python}
 y = np.where(y == 'setosa',-1,1)
@@ -91,10 +91,10 @@ plt.show()
 ## Podstawy obiektowości
 
 Aplikacje powinny być wytwarzane w sposób niezawodny, szybki oraz ekonomiczny.
-`Obiekty` (a dokładniej `Klasy`) to jeden ze środków dzięki któremy można uzyskać ten cel. 
+`Obiekty` (a dokładniej `Klasy`) to jeden ze środków dzięki któremy można uzyskać ten cel.
 Obiekty można rozumieć jako _wieloużywalne_ komponenty oprogramowania (_ang. reusable_).
-Potrafią realizować one rozmaite koncepcje i byty np. datę, czas, obrazy, samochody, dźwięk, ludzi etc. 
-Praktycznie wszystko co określane jest jako rzeczownik, może być realizowane w kategoriach **atrybutów** obiektów. 
+Potrafią realizować one rozmaite koncepcje i byty np. datę, czas, obrazy, samochody, dźwięk, ludzi etc.
+Praktycznie wszystko co określane jest jako rzeczownik, może być realizowane w kategoriach **atrybutów** obiektów.
 Natomiast zachowania obiektów, wyrażane czasownikami, można określić jako **metody** klas.
 Programy oparte o obiekty są dużo łatwiejsze do zrozumienia i weryfikacji niż kody pisane w konwencji tzw. programowania strukturalnego.
 
@@ -103,10 +103,10 @@ Programy oparte o obiekty są dużo łatwiejsze do zrozumienia i weryfikacji ni�
 
 Obiekt realizujący konto bankowe można wygenerować z klasy, która zapewne posiada metody reprezentujące wpłaty środków (ang. _deposit_), ich wypłatę (ang. _withdraw_) czy udostępnianie bieżącego salda (ang. _inquire_).
 
-Tak jak wspomniano wcześniej wieloużywalne klasy to takie na podstawie których możemy zrealizować wiele obiektów (egzlemplarzy czy **instancji**). 
+Tak jak wspomniano wcześniej wieloużywalne klasy to takie na podstawie których możemy zrealizować wiele obiektów (egzlemplarzy czy **instancji**).
 Drugą ciekawą własnością obiektowości jest możliwosć tworzenia nowych klas na bazie już istniejących poprzez tzw. mechanizm dziedziczenia (ang. _inheritance_) - Nie odkrywaj Ameryki na nowo.
 
-> Zadanie domowe - Usiądź do komputera, wyłącz fb i inne rozpraszacze ! Zacznij myśleć i pisz kod zorientowany obiektowo (ang. _Object Oriented Analysis and Design_). Ale wpierw sprawdź kiedy i gdzie powstał język Python. Znajdź inne języki zorientowane obiektowo. Gdzie w analizach danych słyszałeś o takich językach ? 
+> Zadanie domowe - Usiądź do komputera, wyłącz fb i inne rozpraszacze ! Zacznij myśleć i pisz kod zorientowany obiektowo (ang. _Object Oriented Analysis and Design_). Ale wpierw sprawdź kiedy i gdzie powstał język Python. Znajdź inne języki zorientowane obiektowo. Gdzie w analizach danych słyszałeś o takich językach ?
 
 > Zadanie domowe bis - Przestań zastanawiać się nad życiowym pytaniem "Python czy R"
 
@@ -115,8 +115,7 @@ Drugą ciekawą własnością obiektowości jest możliwosć tworzenia nowych kl
 import this
 ```
 
-
-> Zadanie domowe - Sprawdź co możesz zrobić 
+> Zadanie domowe - Sprawdź co możesz zrobić
 wykorzystując podstawowe biblioteki: `collections`,
 `decimal`, `json`,`math`,`os`,`random`,`re`,`sqlite3`,`sys`.
 
@@ -135,7 +134,7 @@ b = Nazwa()
 
 b.__dir__()
 
-'napis'. # press Tab 
+'napis'. # press Tab
 
 'napis'.__dir__()
 ```
@@ -161,7 +160,7 @@ class Die(object):
         """Zwraca losową wartość od 1 do liczby ścian"""
         return randint(1,self.num_sides)
 
-# program 
+# program
 
 die = Die() # stwórz kość
 
@@ -216,51 +215,6 @@ plt.axes().get_yaxis().set_visible(False)
 plt.show()
 
 ```
-```{python}
-# a tak powinno działać !!!
-from random import choice
-
-class RandomWalk(object):
-    """generowanie błądzenia losowego"""
-    def __init__(self, num_points=5000):
-        self.num_points = num_points
-        self.x_values = [0]
-        self.y_values = [0]
-
-    def fill_walk(self):
-        while len(self.x_values) < self.num_points:
-            x_direction = choice([-1,1])
-            x_distance = choice([0,1,2,3,4])
-            x_step = x_direction*x_distance
-
-            y_direction = choice([-1,1])
-            y_distance = choice([0,1,2,3,4])
-            y_step = y_direction*y_distance
-
-            if x_step == 0 and y_step == 0:
-                continue
-
-            next_x = self.x_values[-1] + x_step
-            next_y = self.y_values[-1] + y_step
-
-            self.x_values.append(next_x)
-            self.y_values.append(next_y)
-
-```
-
-```{python}
-rw = RandomWalk(50000)
-rw.fill_walk()
-
-point_number = list(range(rw.num_points))
-plt.scatter(rw.x_values,rw.y_values, c=point_number, cmap=plt.cm.Blues, edgecolor='none', s=15)
-plt.scatter(0,0,c='green', edgecolor='none',s=100)
-plt.scatter(rw.x_values[-1],rw.y_values[-1], c='red',edgecolor='none', s=100)
-plt.axes().get_xaxis().set_visible(False)
-plt.axes().get_yaxis().set_visible(False)
-plt.show()
-```
-
 
 ## KLASYFIKACJA
 
@@ -272,7 +226,7 @@ import matplotlib.pyplot as plt
 # dwa wiersze danych realizujące pierwszą klasę
 x1 = [1,2]
 x2 = [3,4]
-# dwa wiersze danych realizujące drugą klasę 
+# dwa wiersze danych realizujące drugą klasę
 y1 = [-1,-1]
 y2 = [1,1]
 plt.scatter(x1, y1, marker='o', color='r')
@@ -293,5 +247,3 @@ print(X)
 
 print(y)
 ```
-
-
