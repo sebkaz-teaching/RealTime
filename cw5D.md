@@ -93,3 +93,32 @@ __Partition__ odpowiada w przetwarzaniu danych pojęciu __widoku__.
 **Kafka Connect** - zbiór gotowych adapterów pozwalających tworzyć zdarzenia na podstawie danych znajdujących się w rozwiązaniach służących do przechowywania lub przetwarzania danych tj. Active MQ, Amazon S3, ElasticSearch, Cassandra, MySQL, PostgresSQL, SQLServer czy MongoDB. Adaptery te pozwalająca zarówno na pobieranie danych jak i ich zapis.
 
 **Kafka Stream** - rozwiązanie pozwalające na transformację zdarzeń wewnątrz platformy. Wykorzystuje język zapytań KSQL pozwalając na wykonywanie skalowalnych i elastycznych zapytań na strumieniach danych. Najczęściej wykorzystywane do normalizacji danych przychodzących z różnych źródeł.
+
+
+## Producent w konsoli
+
+```{bash}
+bin/kafka-console-producer.sh --topic rta --bootstrap-server localhost:9092
+```
+
+## Konsumer w konsoli
+
+```{bash}
+bin/kafka-console-consumer.sh --topic rta --bootstrap-server localhost:9092 --from-beginning
+```
+
+## Producent w bibliotece Pythona
+
+```{python}
+topic = 'rta'
+
+from kafka import KafkaProducer
+
+producer = KafkaProducer(bootstrap_servers=['127.0.0.1:9092"])
+producer.send(topic, b'testowy tekst ')
+
+pr = KafkaProducer(bootstrap_servers=['localhost:9092'], value_serializer=lambda x: json.dumps(x).encode('utf-8'))
+
+pr.send(topic, {"id":1, "imie":"adam","nazwisko":"nowak"})
+# wersja z jsonem
+````
