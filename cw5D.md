@@ -30,6 +30,7 @@ Produkujesz swoje źródła i kontent wrzucasz na platformę. Treść może być
 
 > Poszukaj info i przykład Data Driven vs Event Driven Apps
 
+
 ## Instalacja i weryfikacja
 
 1. Przejdź na [stronę Kafki](https://kafka.apache.org). Aktualna wersja stabilna `2.8.0`.
@@ -57,9 +58,16 @@ bin\windows\kafka-server-start.sh config\server.properties
 7. Stwórz topic i uruchom producenta i konsumenta w osobnych konsolach.
 
 
-
-
 Kafka udostępnia API praktycznie we wszystkich istotnych językach programowania. Dla nas istotne jest API Pythona.
+
+## Broker
+
+Brokerem nazywamy pojedynczą aplikację Kafki (serwer). Podczas działania całej struktury można uruchomić wiele brokerów. Dystrybucja wiadomości jest podzielona na **partycje**. Partycje pozwalają na replikacje topików i przydają się podczas awarii któregoś z serwera. Jednostki opisywane są jako **liderzy** i **followerzy**.
+
+## zookeeper
+
+Apache zookeeper to scentralizowana usługa wymagana do działania Kafki. Zajmuje się konfiguracją topików, kontrolą brokerów. Pozwala wyznaczyć ich statusy i metryki.
+
 
 ## Kafka Topic (temat)
 
