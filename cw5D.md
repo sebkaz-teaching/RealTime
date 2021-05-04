@@ -122,3 +122,11 @@ pr = KafkaProducer(bootstrap_servers=['localhost:9092'], value_serializer=lambda
 pr.send(topic, {"id":1, "imie":"adam","nazwisko":"nowak"})
 # wersja z jsonem
 ````
+
+## Materiały dodatkowe
+
+1. [Introducing the Kafka Consumer](https://www.confluent.io/blog/tutorial-getting-started-with-the-new-apache-kafka-0-9-consumer-client/)
+2.  [Getting Started With Apache Kafka](https://medium.com/rock-your-data/getting-started-with-apache-kafka-efc616bd6dd5)
+3. [Kafka-Python explained in 10 lines of code](https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1)
+4. [Getting started with Apache Kafka in Python](https://towardsdatascience.com/getting-started-with-apache-kafka-in-python-604b3250aa05)
+5. [Apache Kafka: Docker Container and examples in Python](https://towardsdatascience.com/kafka-docker-python-408baf0e1088)
