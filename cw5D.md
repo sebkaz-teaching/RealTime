@@ -45,7 +45,7 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 lub
 ```{bash}
-bin\windows\zookeeper-server-start.sh config\zookeeper.properties
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 ```
 6. uruchom serwer Kafki
 ```{bash}
@@ -53,7 +53,7 @@ bin/kafka-server-start.sh config/server.properties
 ```
 lub
 ```{bash}
-bin\windows\kafka-server-start.sh config\server.properties
+bin\windows\kafka-server-start.bat config\server.properties
 ```
 7. Stwórz topic i uruchom producenta i konsumenta w osobnych konsolach.
 
