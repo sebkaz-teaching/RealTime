@@ -28,6 +28,7 @@ Produkujesz swoje źródła i kontent wrzucasz na platformę. Treść może być
 
 <img src="https://docs.cloudera.com/documentation/kafka/1-2-x/images/kafka-architecture.png" />
 
+> Poszukaj info i przykład Data Driven vs Event Driven Apps
 
 ## Instalacja i weryfikacja
 
@@ -63,6 +64,14 @@ Kafka udostępnia API praktycznie we wszystkich istotnych językach programowani
 ## Kafka Topic (temat)
 
 Temat to abstrakcja do której można publikować zdarzenia. Kafka umożliwia przetwarzanie wielu tematów w jednym systemie. Ponadto każdy temat może być obsługiwany przez wielu konsumentów pobierających zdarzenia z konkretnych tematów. Dla każdego tematu utrzymywany jest rozproszony log, w którym zapisywane są opublikowane zdarzenia. Logi zawarte na partycjach są uporządkowane czasowo i niezmienialne. Można tylko dopisywać nowe zdarzenia. Wszystkie dane przechowywane są przez określony (konfigurowalny - domyślnie 7 dni) okres czasu (retention time). Jeśli konsument nie odczyta danych do tego czasu traci możliwość jego przetworzenia. Ustawienie długiego czasu wpływa tylko i wyłącznie na ilość zużytego miejsca na dysku. Każde zdarzenie reprezentowane jest jako para 'klucz':'wartość'. Przy czym sam broker (platforma) jest pasywna - nie tworzy nowych eventów. Dane mogą pochodzić tylko od producentów a ich przetwarzaniem zajmują się tylko konsumenci.  
+
+__Topic__ odpowiada w przetwarzaniu danych pojęciu __tabeli__.
+
+__Message__ odpowiada w przetwarzaniu danych pojęciu __wiersza__.
+
+__Partition__ odpowiada w przetwarzaniu danych pojęciu __widoku__.
+
+
 
 
 **Kafka Connect** - zbiór gotowych adapterów pozwalających tworzyć zdarzenia na podstawie danych znajdujących się w rozwiązaniach służących do przechowywania lub przetwarzania danych tj. Active MQ, Amazon S3, ElasticSearch, Cassandra, MySQL, PostgresSQL, SQLServer czy MongoDB. Adaptery te pozwalająca zarówno na pobieranie danych jak i ich zapis.
