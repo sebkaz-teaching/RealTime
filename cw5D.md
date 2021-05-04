@@ -57,6 +57,14 @@ bin\windows\kafka-server-start.bat config\server.properties
 ```
 7. Stwórz topic i uruchom producenta i konsumenta w osobnych konsolach.
 
+Zamiast kroków 5 i 6 możesz uruchomić dockera
+[obraz RTA KAFKA](https://github.com/sebkaz/docker-kafka-rta)
+
+```{bash}
+docker-compose up
+```
+
+
 
 Kafka udostępnia API praktycznie we wszystkich istotnych językach programowania. Dla nas istotne jest API Pythona.
 
