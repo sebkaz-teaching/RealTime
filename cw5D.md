@@ -9,7 +9,7 @@ mathjax: true
 
 **Distributed Stream Processing System**
 
-Wieloserwerowa platforma do propagacji zdarzeń w rozproszonych systemach informatycznych.
+Wielo-serwerowa platforma do propagacji zdarzeń w rozproszonych systemach informatycznych.
 Stworzona na potrzeby LinkedIn w 2011 roku (napisana w Scala i Java). Obecnie zarządzana przez Apache Foundation. Cechuje się znakomitą skalowalnością horyzontalną. Pozwala na budowanie systemów (na klastrach) potrafiących propagować setki tysięcy zdarzeń dziennie.
 
 Do największych firm pracujących na Kafce należą: LinkedIn, Oracle, PayPal, Uber, Yahoo, Trivago, Twitter, Spotify, Skyscanner, Cisco, AirBnB, Adidas, Zalando czy Netflix.
@@ -63,7 +63,6 @@ Zamiast kroków 5 i 6 możesz uruchomić dockera
 ```{bash}
 docker-compose up
 ```
-
 
 
 Kafka udostępnia API praktycznie we wszystkich istotnych językach programowania. Dla nas istotne jest API Pythona.
