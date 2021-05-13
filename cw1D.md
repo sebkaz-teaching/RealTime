@@ -27,6 +27,27 @@ from sklearn.datasets import load_iris
 
 ```{python}
 iris = load_iris()
+
+type(iris)
+# dict
+```
+Klucze słownika `iris` można wyciągnąć za pomocą metody:
+```{python}
+iris.keys()
+```
+
+Dostęp do elementów otrzymujemy poprzez :
+```{python}
+iris.['target']
+
+iris.data
+
+# opis danych
+
+print(iris.DESCR)
+
+```
+```{python}
 df = pd.DataFrame(data= np.c_[iris['data'], iris['target']],
                      columns= iris['feature_names'] + ['target'])
 
@@ -34,8 +55,15 @@ df['species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 
 df = df.drop(columns=['target'])
 
+```
 
+Zweryfikuj następujące metody:
+```
 df.head()
+
+df.tail()
+
+df.describe()
 
 df.info()
 ```
@@ -44,7 +72,7 @@ Powyżej przedstawiona została ramka danych stanowiąca fragment danych **Iris*
 Zbiór ten składa się z wyników pomiarów czterech cech trzech gatunków kwiatów Irysa.
 
 Przez macierz _X_ będziemy oznaczali zbiór wszystkich przypadków i cech.
-Co w naszym przypdaku generuje macierz 150 wierszy oraz 4 kolumn.
+Co w naszym przypadku generuje macierz 150 wierszy oraz 4 kolumn.
 
 Przez wektor _y_ oznaczać będziemy etykiety.
 
@@ -76,6 +104,8 @@ y = np.where(y == 'setosa',-1,1)
 X = df.iloc[:100,[0,2]].values # pierwsze sto wierszy + kolumna 0 i 2, values - zamienia na np array
 ```
 
+Wykres danych:
+
 ```{python}
 import matplotlib.pyplot as plt
 
@@ -91,20 +121,20 @@ plt.show()
 ## Podstawy obiektowości
 
 Aplikacje powinny być wytwarzane w sposób niezawodny, szybki oraz ekonomiczny.
-`Obiekty` (a dokładniej `Klasy`) to jeden ze środków dzięki któremy można uzyskać ten cel.
+`Obiekty` (a dokładniej `Klasy`) to jeden ze środków dzięki któremu można uzyskać ten cel.
 Obiekty można rozumieć jako _wieloużywalne_ komponenty oprogramowania (_ang. reusable_).
 Potrafią realizować one rozmaite koncepcje i byty np. datę, czas, obrazy, samochody, dźwięk, ludzi etc.
 Praktycznie wszystko co określane jest jako rzeczownik, może być realizowane w kategoriach **atrybutów** obiektów.
 Natomiast zachowania obiektów, wyrażane czasownikami, można określić jako **metody** klas.
 Programy oparte o obiekty są dużo łatwiejsze do zrozumienia i weryfikacji niż kody pisane w konwencji tzw. programowania strukturalnego.
 
-> Zadanie domowe - Jakie inne koncepcje programowania używane są współczenie ? (zobacz np. język Scala)
+> Zadanie domowe - Jakie inne koncepcje programowania używane są współcześnie ? (zobacz np. język Scala)
 
 
 Obiekt realizujący konto bankowe można wygenerować z klasy, która zapewne posiada metody reprezentujące wpłaty środków (ang. _deposit_), ich wypłatę (ang. _withdraw_) czy udostępnianie bieżącego salda (ang. _inquire_).
 
-Tak jak wspomniano wcześniej wieloużywalne klasy to takie na podstawie których możemy zrealizować wiele obiektów (egzlemplarzy czy **instancji**).
-Drugą ciekawą własnością obiektowości jest możliwosć tworzenia nowych klas na bazie już istniejących poprzez tzw. mechanizm dziedziczenia (ang. _inheritance_) - Nie odkrywaj Ameryki na nowo.
+Tak jak wspomniano wcześniej wieloużywalne klasy to takie na podstawie których możemy zrealizować wiele obiektów (**instancji**).
+Drugą ciekawą własnością obiektowości jest możliwość tworzenia nowych klas na bazie już istniejących poprzez tzw. mechanizm dziedziczenia (ang. _inheritance_) - Nie odkrywaj Ameryki na nowo.
 
 > Zadanie domowe - Usiądź do komputera, wyłącz fb i inne rozpraszacze ! Zacznij myśleć i pisz kod zorientowany obiektowo (ang. _Object Oriented Analysis and Design_). Ale wpierw sprawdź kiedy i gdzie powstał język Python. Znajdź inne języki zorientowane obiektowo. Gdzie w analizach danych słyszałeś o takich językach ?
 
