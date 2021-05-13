@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Ćwiczenia 2 - Python Obiekty 
+title: Ćwiczenia 2 - Python Obiekty
 mathjax: true
 ---
 
-Na poprzednich zajęciach rozwazaliśmy proste dane dla problemu klasyfikacji.
+Na poprzednich zajęciach rozważaliśmy proste dane dla problemu klasyfikacji.
 
 
 ```{python}
@@ -37,7 +37,7 @@ dziecko.fit()
 `dziecko.errors_ `
 
 #### rozwiązania znajdą się w wagach
-dziecko.w_
+`dziecko.w_`
 
 #### w naszym przypadku dziecko uczy się dwóch wag !
 
@@ -260,6 +260,94 @@ plt.show()
 ```
 
 # Środowisko produkcyjne
+
+```{python}
+from sqlalchemy import create_engine
+
+engine = create_engine('sqlite:///irysy.db')
+# zapis ramki do bazy SQL
+df.to_sql('dane', con=engine, index=False)
+# wykonanie prostego zapytania na bazie danych
+a = engine.execute("SELECT * FROM dane").fetchall()
+pd.DataFrame(a, columns=df.columns)
+```
+
+W pakiecie SQLAlchemy można generować kod w pełni obiektowy.
+
+```{python}
+from sqlalchemy import create_engine
+from sqlalchemy import Column, String, Integer
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('sqlite:///irysy.db')
+base = declarative_base()
+
+class Transakcje(base):
+
+    __tablename__ = 'transakcje'
+
+    transakcja_id = Column(Integer, primary_key=True )
+    data = Column(String)
+    przedmiot_id = Column(Integer)
+    cena = Column(Integer)
+
+    def __init__(self, transakcja_id, data, przedmiot_id, cena):
+        self.transakcja_id = transakcja_id
+        self.data = data
+        self.przedmiot_id = przedmiot_id
+        self.cena = cena
+
+base.metadata.create_all(engine)
+
+
+from sqlalchemy.orm import sessionmaker
+# Stworzenie nowej sesji
+Session = sessionmaker(bind=engine)
+session = Session()
+# dodanie danych
+for t in range(10):
+    tr = Transakcje(t, f'200{t}/05/06', t**2-t*2, 19)
+    session.add(tr)
+# zapis zmian w bazie danych
+session.commit()
+
+for s in session.query(Transakcje).all():
+    print(s.transakcja_id, s.data, s.cena)
+
+# wybrane transakcje
+for s in session.query(Transakcje).filter(Transakcje.transakcja_id>5):
+    print(s.transakcja_id, s.data)
+```
+
+W przypadku danych nieustrukturyzowanych
+
+```{python}
+import json
+person = '{"name": "Bob", "languages": ["English", "French"]}'
+person_dict = json.loads(person)
+
+# Output: {'name': 'Bob', 'languages': ['English', 'Fench']}
+print( person_dict)
+
+# Output: ['English', 'French']
+print(person_dict['languages'])
+```
+W przypadku plików zewnętrznych (np. test.json)
+
+```{python}
+with open('test.json') as f:
+    data = json.load(f)
+
+# Output: {'name': 'Bob', 'languages': ['English', 'Fench']}
+print(data)
+
+with open('person.json', 'w') as json_file:
+    json.dump(person_dict, json_file)
+```
+
+
+
 
 ```{python}
 

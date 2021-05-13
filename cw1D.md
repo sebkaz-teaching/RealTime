@@ -4,8 +4,6 @@ title: Ćwiczenia 1 - Python podstawy
 mathjax: true
 ---
 
-# Ćwiczenia 1
-
 - Przedstawienie środowiska Jupyter notebook (uruchomienie + Docker)
 - Podstawy numpy i pandas
 - Programowanie obiektowe w pythonie
@@ -246,7 +244,7 @@ plt.show()
 
 ```
 
-## KLASYFIKACJA
+## Klasyfikacja binarna
 
 ```{python}
 
