@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ćwiczenia 7 - Spark Streaming 7
+title: Ćwiczenia 7 - Spark Streaming 2
 ---
 
 
