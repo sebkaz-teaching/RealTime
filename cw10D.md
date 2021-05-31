@@ -112,13 +112,12 @@ Zmierz się z tutorialem [przetwarzania strumieniowego w chmurze](https://cloud.
 
 
 
-
-
 ## Databricks
 
 1. [AWS](https://docs.databricks.com/?_ga=2.90302814.592354964.1621514203-1965540573.1621081098)
 2. [Azure](https://docs.microsoft.com/en-us/azure/databricks/)
 3. [Google](https://docs.gcp.databricks.com)
+4. [Oracle]()
 
 
 ## Quantum Computing
