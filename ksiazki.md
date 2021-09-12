@@ -56,7 +56,7 @@ title: Książki
 
 2. B. Chambers, M. Zaharia _Spark: The Definitive Guide. Big Data Processing Made Simple (ebook)_ [Zobacz opis](http://helion.pl/view/111546/e_0qdv.html) lub [Kup e-book](http://helion.pl/add111546~e_0qdv_ebook)
 
-3. J. Quddus _Machine Learning with Apache Spark Quick Start Guide (ebook)_ [Zobacz opis](http://helion.pl/view/111546/e_15el..html) lub [Kup e-book](http://helion.pl/add111546~e_15el._ebook)
+3. J. Quddus _Machine Learning with Apache Spark Quick Start Guide (ebook)_ [Zobacz opis](http://helion.pl/view/111546/e_15el.html) lub [Kup e-book](http://helion.pl/add111546~e_15el._ebook)
 
 
 ## Programowanie
