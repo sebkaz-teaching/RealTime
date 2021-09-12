@@ -15,7 +15,7 @@ title: Syllabus
 >
 > Poziom przedmiotu: średnio-zaawansowany
 >
-> Wtorek (13:30 - 15:00 wykład, 13:30 - 20:30 ćwiczenia)
+> Poniedziałek (08:00 - 09:40 wykład, 08:00 - 13:20 ćwiczenia)
 
 **Prowadzący:** [Sebastian Zając](https://sebastianzajac.pl), 
   [sebastian.zajac@sgh.waw.pl](mailto:sebastian.zajac@sgh.waw.pl)
@@ -131,8 +131,8 @@ Metody dokumentacji: prace pisemne studenta ( w trakcie semestru, zaliczeniowe, 
 
 ## Realizacja przedmiotu
 
-- egzamin testowy 40%
-- kolokwium 20%
+- egzamin testowy 30%
+- kolokwium 30%
 - referaty/eseje 40%
 
 ## Literatura
