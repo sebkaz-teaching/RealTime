@@ -1,8 +1,4 @@
----
-layout: page
-title: Ćwiczenia 3 - Spark podstawy
-mathjax: true
----
+
 
 ## Podsumowanie poprzednich zajęć
 

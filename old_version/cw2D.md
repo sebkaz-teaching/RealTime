@@ -1,8 +1,3 @@
----
-layout: page
-title: Ćwiczenia 2 - Python Obiekty
-mathjax: true
----
 
 Na poprzednich zajęciach rozważaliśmy proste dane dla problemu klasyfikacji.
 

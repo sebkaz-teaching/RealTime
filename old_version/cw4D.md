@@ -1,8 +1,4 @@
----
-layout: page
-title: Ćwiczenia 4 - Spark Stream
-mathjax: true
----
+
 ## Przetwarzanie strumieniowe
 
 ### Typy:

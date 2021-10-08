@@ -1,8 +1,4 @@
----
-layout: page
-title: Ćwiczenia 7 - Spark SQL, Streaming
-mathjax: true
----
+
 
 # Przetwarzanie tekstu
 

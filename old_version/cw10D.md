@@ -1,8 +1,4 @@
----
-layout: page
-title: Ćwiczenia 10 - Streaming w chmurze
-mathjax: true
----
+
 
 # Narzędzia chmurowe do przetwarzania strumieniowego
 

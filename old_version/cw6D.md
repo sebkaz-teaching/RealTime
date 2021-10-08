@@ -1,8 +1,3 @@
----
-layout: page
-title: Ćwiczenia 6 - Spark Streaming
-mathjax: true
----
 
 ## Licznik wyrazów w wersji stacjonarnej
 

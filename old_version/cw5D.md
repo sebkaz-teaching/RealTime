@@ -1,8 +1,4 @@
----
-layout: page
-title: Ćwiczenia 5 - Kafka podstawy
-mathjax: true
----
+
 
 
 # Apache Kafka
