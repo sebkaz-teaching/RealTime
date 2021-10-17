@@ -4,7 +4,7 @@ title: Książki
 ---
 
 
-## Stream Processing 
+## Stream Processing
 
 1. G. Maas, F. Garillot _Stream Processing with Apache Spark_ [Zobacz opis](http://helion.pl/view/111546/e_11pp.html) lub [Kup e-book](http://helion.pl/add111546~e_11pp_ebook)
 
@@ -49,6 +49,8 @@ title: Książki
 
 6. D. Foster _Deep learning i modelowanie generatywne. Jak nauczyć komputer malowania, pisania, komponowania i grania_ [Zobacz opis](http://helion.pl/view/111546/deelmg.html) lub [Kup książkę](http://helion.pl/add111546~deelmg), [Kup e-book](http://helion.pl/add111546~deelmg_ebook)
 
+7. J. Howard, S. Gugger _Deep learning dla programistów. Budowanie aplikacji AI za pomocą fastai i PyTorch_ [Zobacz opis](http://helion.pl/view/111546/delepr.html) lub [Kup książkę](http://helion.pl/add111546~delepr), [Kup e-book](http://helion.pl/add111546~delepr_ebook)
+
 
 ## SPARK
 
@@ -73,7 +75,7 @@ title: Książki
 
 2. R. McKendrick, S. Gallagher _Docker. Programowanie aplikacji dla zaawansowanych. Wydanie II_ [Zobacz opis](http://helion.pl/view/111546/dockaz.html) lub [Kup książkę](http://helion.pl/add111546~dockaz), [Kup e-book](http://helion.pl/add111546~dockaz_ebook)
 
-## Github 
+## Github
 
 1. P. Bell, B. Beer _GitHub. Przyjazny przewodnik (ebook)_ [Zobacz opis](http://helion.pl/view/111546/github.html) lub [Kup e-book](http://helion.pl/add111546~github_ebook)
 
@@ -85,3 +87,11 @@ title: Książki
 2. A. Sweigart, _Automatyzacja nudnych zadań z pythonem_. [Zobacz opis](http://helion.pl/view/111546/autopy) lub [Kup książkę](http://helion.pl/add111546~autopy), [Kup e-book](http://helion.pl/add111546~autopy_ebook)
 
 3. K. Reitz, T. Schlusser _Przewodnik po Pythonie. Dobre praktyki i praktyczne narzędzia_. [Zobacz opis](http://helion.pl/view/111546/przepy) lub [Kup teraz](http://helion.pl/add111546~przepy), [Kup e-book](http://helion.pl/add111546~przepy_ebook)
+
+## Różne
+
+1. B.Tate, L. Carslon, C. Hiibs, _Ruby on Rails. Wprowadzenie. Wydanie II_ [Zobacz opis](http://helion.pl/view/111546/rubyw2) lub [Kup e-book](http://helion.pl/add111546~rubyw2_ebook)
+
+2. B. Frain, _Responsive Web Design. Projektowanie elastycznych witryn w HTML5 i CSS3_, [Zobacz opis](http://helion.pl/view/111546/resweb) lub [Kup e-book](http://helion.pl/add111546~resweb_ebook)
+
+3. K. Beck, _TDD. Sztuda tworzenia_, [Zobacz opis](http://helion.pl/view/111546/resweb) lub [Kup e-book](http://helion.pl/add111546~resweb_ebook)
