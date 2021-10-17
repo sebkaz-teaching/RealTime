@@ -94,4 +94,8 @@ title: Książki
 
 2. B. Frain, _Responsive Web Design. Projektowanie elastycznych witryn w HTML5 i CSS3_, [Zobacz opis](http://helion.pl/view/111546/resweb) lub [Kup e-book](http://helion.pl/add111546~resweb_ebook)
 
-3. K. Beck, _TDD. Sztuda tworzenia_, [Zobacz opis](http://helion.pl/view/111546/resweb) lub [Kup e-book](http://helion.pl/add111546~resweb_ebook)
+3. K. Beck, _TDD. Sztuda tworzenia_, [Zobacz opis](http://helion.pl/view/111546/tddszv) lub [Kup teraz](http://helion.pl/add111546~tddszv), [Kup e-book](http://helion.pl/add111546~tddszv_ebook)
+
+4. B. Dayley, _Node.js, MongoDB, AngularJS. Kompendium wiedzy_, [Zobacz opis](http://helion.pl/view/111546/tddszv) lub [Kup teraz](http://helion.pl/add111546~tddszv), [Kup e-book](http://helion.pl/add111546~tddszv_ebook)
+5. 
+6. nodekw
