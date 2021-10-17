@@ -52,7 +52,7 @@ title: Książki
 7. J. Howard, S. Gugger _Deep learning dla programistów. Budowanie aplikacji AI za pomocą fastai i PyTorch_ [Zobacz opis](http://helion.pl/view/111546/delepr.html) lub [Kup książkę](http://helion.pl/add111546~delepr), [Kup e-book](http://helion.pl/add111546~delepr_ebook)
 
 
-## SPARK
+## Apache SPARK
 
 1. _Spark. Zaawansowana analiza danych (ebook)_ [Zobacz opis](http://helion.pl/view/111546/sparkz.html) lub [Kup e-book](http://helion.pl/add111546~sparkz_ebook)
 
@@ -97,5 +97,4 @@ title: Książki
 3. K. Beck, _TDD. Sztuda tworzenia_, [Zobacz opis](http://helion.pl/view/111546/tddszv) lub [Kup teraz](http://helion.pl/add111546~tddszv), [Kup e-book](http://helion.pl/add111546~tddszv_ebook)
 
 4. B. Dayley, _Node.js, MongoDB, AngularJS. Kompendium wiedzy_, [Zobacz opis](http://helion.pl/view/111546/tddszv) lub [Kup teraz](http://helion.pl/add111546~tddszv), [Kup e-book](http://helion.pl/add111546~tddszv_ebook)
-5. 
-6. nodekw
+
