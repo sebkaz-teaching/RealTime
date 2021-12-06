@@ -25,3 +25,10 @@ title: Egzamin - zagadnienia
 18. Transformers sklearn - własne klasy dla transformacji danych
 
 ## Apache Spark
+
+1. Uruchomienie Apache Sparka w konsoli
+2. Powołanie obiektu SparkContext i SparkSession
+3. Tworzenie obiektu RDD
+4. akcje na RDD
+5. transformacje na RDD
+6. Ramki Danych 

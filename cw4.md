@@ -78,9 +78,9 @@ Oprogramowanie można zainstalować lokalnie lub korzystając z przygotowanego k
 
 **Wersja Docker**
 
-Obraz przygotowany na zajęcia z udostępnieniem katalogu do pracy.
+Obraz przygotowany na zajęcia z plikami z zajęc.
 ```{bash}
-docker run -d -p 8888:8888 -v "full_path_to_your_folder:/notebooks" sebkaz/docker-spark-jupyter
+docker run -d -p 8888:8888 sebkaz/docker-spark-jupyter
 ```
 
 Oficjalny obraz Sparka z jupyter notebookiem.
@@ -92,10 +92,23 @@ Obie wersje wymagają ściągnięcia ok 2GB.
 
 **Wersja lokalna** (komputer ze środowiskiem Python + instalacja JAVA JDK 8 !)
 
-Środowisko Wi```{python}
+Środowisko Windows:
+- instalacja środowiska Java JDK,
+- instalacja oprogramowania Apache Spark:
+    - [Ściągnij katalog](https://www.apache.org/dyn/closer.lua/spark/spark-3.1.1/spark-3.1.1-bin-hadoop2.7.tgz)
+    - wypakuj ściągnięte archiwum np 7z
+    - umieść w wygodnym miejscu i zapisz ścieżkę (zmień nazwę katalogu np na spark)
+- środowisko do realizacji projektów w języku python:
+    - uruchom jupyter notebook'a
+
+
+```{python}
 import findspark
-# findspark.init()
-# findspark.init("C:/Users/SebastianZajac/Desktop/spark")
+# domyślna pełna konfiguracja 
+findspark.init()
+# dla konfiguracji bez zmiennych systemowych Sparka - Windows
+findspark.init("C:/Users/SebastianZajac/Desktop/spark")
+# dla konfiguracji bez zmiennych systemowych Sparka - Linux, Mac
 findspark.init("/Users/air/Desktop/spark3/")
 ```
 Jeśli wszystko zadziałało możesz wygenerować obiekt SparkContext.
@@ -126,6 +139,9 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder\
         .appName("new")\
         .getOrCreate()
+```
+Posiadając obiekt `SparkSession` możesz odtworzyc obiekt SparkContext.
+```python
 # otrzymanie obiektu SparkContext
 sc = spark.sparkContext
 ```
@@ -444,12 +460,4 @@ df[[var]].toPandas().skew(), df[[var]].toPandas().kurtosis()
 adultDF.write.saveAsTable("adult")
 newAdult = spark.sql("select age, education, sex from adult2 where age > 50")
 newAdult.show(3)
-```ndows:
-- instalacja środowiska Java JDK,
-- instalacja oprogramowania Apache Spark:
-    - [Ściągnij katalog](https://www.apache.org/dyn/closer.lua/spark/spark-3.1.1/spark-3.1.1-bin-hadoop2.7.tgz)
-    - wypakuj ściągnięte archiwum np 7z
-    - umieść w wygodnym miejscu i zapisz ścieżkę (zmień nazwę katalogu np na spark)
-- środowisko do realizacji projektów w języku python:
-    - uruchom jupyter notebook'a
-  
+```
