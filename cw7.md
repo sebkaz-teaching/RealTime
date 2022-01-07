@@ -34,9 +34,10 @@ Produkujesz swoje źródła i kontent wrzucasz na platformę. Treść może być
 2. Ściągnij plik z Binary downloads (wersja 2.12) i rozpakuj programem 7-zip . Uwaga w systemie Win rozpakuj również archiwum tar.
 3. Zmień nazwę katalogu na kafka i wrzuć go do przyjaznej lokalizacji (np na pulpit)
 4. W przypadku systemu Win przejdź do katalogu config i znajdź plik server.properties. Otwórz go w dowolnym edytorze i znajdź linie odpowiedzialną za ustawienie katalogu z logami. Ustaw katalog w swojej dogodnej lokalizacji. np. `C:\\Users\\szajac2\\Desktop\\kafka\\logs`
+   
 [Instalacja WIN](https://reachmnadeem.wordpress.com/2020/08/30/kafka-2-6-up-and-running-in-windows-10/)
 
-5. Uruchom serwer zookeepera
+1. Uruchom serwer zookeepera
 ```{bash}
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
