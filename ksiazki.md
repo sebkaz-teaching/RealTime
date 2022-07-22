@@ -10,7 +10,17 @@ title: Książki
 
 2. F. Hueske, V. Kalavri _Stream Processing with Apache Flink_ [Zobacz opis](http://helion.pl/view/111546/e_13f8.html) lub [Kup e-book](http://helion.pl/add111546~e_13f8_ebook)
 
-## Machine Learning with Pyton
+3. G. Shapira, T. Palino, R. Sivaram_Kafka: The Definitive Guide. 2nd Edition_  [Zobacz opis](http://helion.pl/view/111546/e_270p.html) lub [Kup e-book](http://helion.pl/add111546~e_270p_ebook)
+
+4. J. Urquhart _Flow Architectures_ [Zobacz opis](http://helion.pl/view/111546/e_1wsi.html) lub [Kup e-book](http://helion.pl/add111546~e_1wsi_ebook)
+
+5. M. Seymour _Mastering Kafka Streams and ksqlDB_ [Zobacz opis](http://helion.pl/view/111546/e_1y16.html) lub [Kup e-book](http://helion.pl/add111546~e_1y16_ebook)
+
+6. W. Venema _Building Serverless Applications with Google Cloud Run_ [Zobacz opis](http://helion.pl/view/111546/e_1w3o.html) lub [Kup e-book](http://helion.pl/add111546~e_1w3o_ebook)
+
+7. M. Kleppmann _Przetwarzanie danych w dużej skali. Niezawodność, skalowalność i łatwość konserwacji systemów_ [Zobacz opis](http://helion.pl/view/111546/przdan.html) lub [Kup książkę](http://helion.pl/add111546~przdan), [Kup e-book](http://helion.pl/add111546~przdan_ebook)
+
+## Machine Learning
 
 1. W. McKinney _Python w analizie danych. Przetwarzanie danych za pomocą pakietów Pandas i NumPy oraz środowiska IPython. Wydanie II_  [Zobacz opis](http://helion.pl/view/111546/pytand.html) lub [Kup książkę](http://helion.pl/add111546~pytand), [Kup e-book](http://helion.pl/add111546~pytand_ebook)
 
@@ -37,7 +47,9 @@ title: Książki
 
 ## Deep Learning
 
-1. F. Chollet _Deep Learning. Praca z językiem Python i biblioteką Keras._ [Zobacz opis](http://helion.pl/view/111546/delepy.html) lub [Kup książkę](http://helion.pl/add111546~delepy), [Kup e-book](http://helion.pl/add111546~delepy_ebook)
+1. I. Pointer _Programming PyTorch for Deep Learning. Creating and Deploying Deep Learning Applications_ [Zobacz opis](http://helion.pl/view/111546/e_1bii.html) lub [Kup e-book](http://helion.pl/add111546~e_1bii_ebook)
+2. 
+3. F. Chollet _Deep Learning. Praca z językiem Python i biblioteką Keras._ [Zobacz opis](http://helion.pl/view/111546/delepy.html) lub [Kup książkę](http://helion.pl/add111546~delepy), [Kup e-book](http://helion.pl/add111546~delepy_ebook)
 
 2. J. Patterson, A. Gibson _Deep Learning. Praktyczne wprowadzenie (ebook)_ [Zobacz opis](http://helion.pl/view/111546/deeple.html) lub [Kup e-book](http://helion.pl/add111546~deeple_ebook)
 
@@ -51,6 +63,18 @@ title: Książki
 
 7. J. Howard, S. Gugger _Deep learning dla programistów. Budowanie aplikacji AI za pomocą fastai i PyTorch_ [Zobacz opis](http://helion.pl/view/111546/delepr.html) lub [Kup książkę](http://helion.pl/add111546~delepr), [Kup e-book](http://helion.pl/add111546~delepr_ebook)
 
+
+## Python
+
+1. N. Gift, K. Behrman, A. Deza, G. Gheorghiu _Python dla DevOps. Naucz się bezlitośnie skutecznej automatyzacji_  [Zobacz opis](http://helion.pl/view/111546/pytdev) lub [Kup teraz](http://helion.pl/add111546~pytdev), [Kup e-book](http://helion.pl/add111546~pytdev_ebook)
+
+2. S. F. Lott _Python. Programowanie funkcyjne_ [Zobacz opis](http://helion.pl/view/111546/pythpf) lub [Kup teraz](http://helion.pl/add111546~pythpf), [Kup e-book](http://helion.pl/add111546~pythpf_ebook)
+
+3. C. Althoff, _Programista Samouk. Profesjonalny przewodnik do samodzielnej nauki kodowania._ [Zobacz opis](http://helion.pl/view/111546/proprs) lub [Kup teraz](http://helion.pl/add111546~proprs), [Kup e-book](http://helion.pl/add111546~proprs_ebook)
+
+4. A. Sweigart, _Automatyzacja nudnych zadań z pythonem_. [Zobacz opis](http://helion.pl/view/111546/autopy) lub [Kup książkę](http://helion.pl/add111546~autopy), [Kup e-book](http://helion.pl/add111546~autopy_ebook)
+
+5. K. Reitz, T. Schlusser _Przewodnik po Pythonie. Dobre praktyki i praktyczne narzędzia_. [Zobacz opis](http://helion.pl/view/111546/przepy) lub [Kup teraz](http://helion.pl/add111546~przepy), [Kup e-book](http://helion.pl/add111546~przepy_ebook)
 
 ## Apache SPARK
 
@@ -71,22 +95,16 @@ title: Książki
 
 ## Docker
 
-1. J. Krochmalski _Docker. Projektowanie i wdrażanie aplikacji_ [Zobacz opis](http://helion.pl/view/111546/docpro.html) lub [Kup książkę](http://helion.pl/add111546~docpro), [Kup e-book](http://helion.pl/add111546~docpro_ebook)
+1. Elton Stoneman _Nauka Dockera w miesiąc_ [Zobacz opis](http://helion.pl/view/111546/naudoc.html) lub [Kup książkę](http://helion.pl/add111546~naudoc), [Kup e-book](http://helion.pl/add111546~naudoc_ebook)
 
-2. R. McKendrick, S. Gallagher _Docker. Programowanie aplikacji dla zaawansowanych. Wydanie II_ [Zobacz opis](http://helion.pl/view/111546/dockaz.html) lub [Kup książkę](http://helion.pl/add111546~dockaz), [Kup e-book](http://helion.pl/add111546~dockaz_ebook)
+2. J. Krochmalski _Docker. Projektowanie i wdrażanie aplikacji_ [Zobacz opis](http://helion.pl/view/111546/docpro.html) lub [Kup książkę](http://helion.pl/add111546~docpro), [Kup e-book](http://helion.pl/add111546~docpro_ebook)
+
+3. R. McKendrick, S. Gallagher _Docker. Programowanie aplikacji dla zaawansowanych. Wydanie II_ [Zobacz opis](http://helion.pl/view/111546/dockaz.html) lub [Kup książkę](http://helion.pl/add111546~dockaz), [Kup e-book](http://helion.pl/add111546~dockaz_ebook)
 
 ## Github
 
 1. P. Bell, B. Beer _GitHub. Przyjazny przewodnik (ebook)_ [Zobacz opis](http://helion.pl/view/111546/github.html) lub [Kup e-book](http://helion.pl/add111546~github_ebook)
 
-
-## Python
-
-1. C. Althoff, _Programista Samouk. Profesjonalny przewodnik do samodzielnej nauki kodowania._ [Zobacz opis](http://helion.pl/view/111546/proprs) lub [Kup teraz](http://helion.pl/add111546~proprs), [Kup e-book](http://helion.pl/add111546~proprs_ebook)
-
-2. A. Sweigart, _Automatyzacja nudnych zadań z pythonem_. [Zobacz opis](http://helion.pl/view/111546/autopy) lub [Kup książkę](http://helion.pl/add111546~autopy), [Kup e-book](http://helion.pl/add111546~autopy_ebook)
-
-3. K. Reitz, T. Schlusser _Przewodnik po Pythonie. Dobre praktyki i praktyczne narzędzia_. [Zobacz opis](http://helion.pl/view/111546/przepy) lub [Kup teraz](http://helion.pl/add111546~przepy), [Kup e-book](http://helion.pl/add111546~przepy_ebook)
 
 ## Różne
 
@@ -98,3 +116,6 @@ title: Książki
 
 4. B. Dayley, _Node.js, MongoDB, AngularJS. Kompendium wiedzy_, [Zobacz opis](http://helion.pl/view/111546/tddszv) lub [Kup teraz](http://helion.pl/add111546~tddszv), [Kup e-book](http://helion.pl/add111546~tddszv_ebook)
 
+# Matematyka
+
+1. Steven Strogatz, _Potęga nieskonczoności, jak rachunek różniczkowy i całkowy  odkrywa tajemnice wszechświata_ [Zobacz opis](http://helion.pl/view/111546/e_1yzz) ,[Kup e-book](http://helion.pl/add111546~e_1yzz_ebook)
