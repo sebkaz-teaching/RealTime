@@ -10,7 +10,7 @@ title: Książki
 
 2. F. Hueske, V. Kalavri _Stream Processing with Apache Flink_ [Zobacz opis](http://helion.pl/view/111546/e_13f8.html) lub [Kup e-book](http://helion.pl/add111546~e_13f8_ebook)
 
-3. G. Shapira, T. Palino, R. Sivaram_Kafka: The Definitive Guide. 2nd Edition_  [Zobacz opis](http://helion.pl/view/111546/e_270p.html) lub [Kup e-book](http://helion.pl/add111546~e_270p_ebook)
+3. G. Shapira, T. Palino, R. Sivaram _Kafka: The Definitive Guide. 2nd Edition_  [Zobacz opis](http://helion.pl/view/111546/e_270p.html) lub [Kup e-book](http://helion.pl/add111546~e_270p_ebook)
 
 4. J. Urquhart _Flow Architectures_ [Zobacz opis](http://helion.pl/view/111546/e_1wsi.html) lub [Kup e-book](http://helion.pl/add111546~e_1wsi_ebook)
 
